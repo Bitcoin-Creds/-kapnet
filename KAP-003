@@ -1,0 +1,249 @@
+<pre>
+  BIP: TBD
+  Layer: Applications
+  Title: Canonical Serialization for Kapnet Objects
+  Author: TBD
+  Comments-URI: TBD
+  Status: Draft
+  Type: Standards Track
+  Created: 2026-03-16
+  License: BSD-2-Clause
+  Requires: 3
+</pre>
+
+# Abstract
+
+This document specifies the canonical binary serialization format for Kapnet
+objects. It defines field ordering, scalar encodings, length prefixes, object
+tags, extension sections, and rejection rules for non-canonical encodings.
+Canonical serialization is required for deterministic hashing, signing,
+replay, proof validation, and interoperability across implementations.
+
+# Copyright
+
+This BIP is licensed under the BSD 2-clause license.
+
+# Motivation
+
+Kapnet requires stable object identity across nodes, archives, relays, and
+validators. If equivalent objects admit multiple valid encodings, then object
+hashes diverge, signatures become ambiguous, and replay-critical logic
+fragments. A canonical serialization layer prevents such ambiguity.
+
+This document is intentionally lower-level than message, proof, braid, or
+execution specifications. All higher-layer Kapnet objects are expected to
+build on this byte discipline.
+
+# Specification
+
+## Object Model
+
+A Kapnet object is a typed byte sequence:
+
+- `type_tag`
+- `version`
+- `body`
+- optional `extensions`
+
+Every object MUST have exactly one canonical encoding.
+
+## Scalar Encoding
+
+### Unsigned integers
+
+Unsigned integers MUST be encoded in big-endian form using the minimum fixed
+width required by the field definition.
+
+Defined widths are:
+
+- `u8`
+- `u16`
+- `u32`
+- `u64`
+- `u128`
+
+A field defined as `u32` MUST always occupy 4 bytes, even when its value is
+small.
+
+### Booleans
+
+Boolean values MUST be encoded as a single byte:
+
+- `0x00` = false
+- `0x01` = true
+
+Any other value is invalid.
+
+### Variable-length byte strings
+
+Variable-length byte strings MUST be encoded as:
+
+- compact length prefix
+- raw bytes
+
+The length prefix uses the following canonical compact form:
+
+- values `0` through `252`: one byte
+- values `253` through `65535`: marker `0xfd` followed by `u16`
+- values `65536` through `4294967295`: marker `0xfe` followed by `u32`
+- larger values: marker `0xff` followed by `u64`
+
+The shortest valid length encoding MUST be used.
+
+### Fixed-length byte strings
+
+Fixed-length fields such as hashes, public keys, and identifiers MUST occupy
+their exact declared length.
+
+## Composite Encoding
+
+### Structs
+
+A struct MUST encode its fields in the exact order listed in its defining BIP.
+
+No omitted field placeholders are allowed unless explicitly specified.
+
+### Lists
+
+A list MUST encode as:
+
+- compact count
+- each element in order
+
+List order is consensus-relevant whenever the parent object is replay-relevant
+or hash-committed.
+
+### Maps
+
+Maps MUST be encoded as sorted key-value pairs.
+
+The sorting key MUST be the raw bytewise lexicographic ordering of the encoded
+key field.
+
+Duplicate keys are invalid.
+
+## Type Tags
+
+Each top-level Kapnet object family MUST be assigned a `u16` type tag.
+
+Reserved ranges:
+
+- `0x0000` through `0x00ff`: core protocol families
+- `0x0100` through `0x01ff`: execution and package families
+- `0x0200` through `0x02ff`: relay and market families
+- `0x0300` through `0x03ff`: interoperability families
+- `0xff00` through `0xffff`: experimental and local-use families
+
+Experimental type tags MUST NOT be used in interoperable mainnet deployments.
+
+## Versioning
+
+Each object family MUST contain an explicit `u16` version field immediately
+following the `type_tag`.
+
+Unknown versions MUST be rejected unless the defining BIP explicitly allows
+forward-compatible parsing.
+
+## Optional Fields
+
+Optional fields MUST be encoded using an explicit presence bitmap or explicit
+tagged extension section. They MUST NOT be represented by ambiguous zero values.
+
+## Extensions
+
+An object MAY contain an extension section if and only if the defining BIP
+permits it.
+
+An extension section MUST encode as:
+
+- compact count
+- repeated entries of:
+  - extension tag (`u16`)
+  - extension payload length
+  - extension payload bytes
+
+Unknown critical extensions MUST cause rejection.
+
+Unknown non-critical extensions MAY be ignored if explicitly permitted by the
+defining BIP.
+
+Criticality is determined by the high bit of the extension tag:
+
+- tag `< 0x8000`: non-critical
+- tag `>= 0x8000`: critical
+
+## Canonical Rejection Rules
+
+An implementation MUST reject an object if any of the following occur:
+
+- non-minimal compact length encoding
+- duplicate map keys
+- list count inconsistent with available bytes
+- trailing bytes outside an allowed extension section
+- invalid boolean representation
+- invalid or unknown critical extension
+- wrong field order
+- wrong field width
+- reserved type tag used outside allowed context
+- duplicate extension tag unless explicitly allowed
+
+## Hashing Preimage
+
+When a Kapnet object is hashed for identity, signing, proof commitment, or
+dependency linkage, the preimage MUST be the full canonical byte encoding of
+that object unless another BIP explicitly overrides this rule.
+
+# Examples
+
+## Example 1: Canonical byte string
+
+A payload of 5 bytes `0x1122334455` encodes as:
+
+- length: `0x05`
+- payload: `0x1122334455`
+
+Final encoding:
+
+`05 11 22 33 44 55`
+
+## Example 2: Invalid non-minimal length
+
+Encoding a 5-byte payload as `fd 0005 ...` is invalid because the shorter
+single-byte length form exists.
+
+# Rationale
+
+This document uses fixed-width scalar fields where declared because replay and
+proof systems benefit from byte stability more than they benefit from local
+size minimization. Compact integers are retained only where element count or
+payload length is inherently variable.
+
+Sorted map encoding is required because unsorted maps create hidden sources of
+non-determinism.
+
+# Backward Compatibility
+
+This document introduces a new serialization format for Kapnet objects and does
+not alter Bitcoin transaction, block, or script serialization.
+
+# Security Considerations
+
+Non-canonical encodings are a standard source of malleability, signature
+ambiguity, and cross-implementation divergence. Strict rejection is therefore
+mandatory.
+
+Parsers MUST enforce length bounds before allocation to prevent memory
+exhaustion attacks.
+
+# Reference Implementation
+
+None.
+
+# Deployment
+
+This specification is a prerequisite for all subsequent Kapnet object
+definitions and should be treated as foundational.
+
+# Acknowledgements
+
+TBD
