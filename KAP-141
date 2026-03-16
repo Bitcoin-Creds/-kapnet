@@ -1,0 +1,162 @@
+<pre>
+  BIP: TBD
+  Layer: Applications
+  Title: Bitcoin Policy Compatibility and Standardness Considerations for Kapnet Anchors
+  Author: TBD
+  Comments-URI: TBD
+  Status: Draft
+  Type: Informational
+  Created: 2026-03-16
+  License: BSD-2-Clause
+  Requires: TBD
+</pre>
+
+# Abstract
+
+This document describes the compatibility boundary between Kapnet anchoring
+templates and Bitcoin policy, miner behavior, wallet assumptions, and general
+deployment practicality. It does not propose consensus changes and does not by
+itself standardize new Bitcoin relay policy.
+
+# Copyright
+
+This BIP is licensed under the BSD 2-clause license.
+
+# Motivation
+
+A payload template can be well-defined yet impractical to deploy. Kapnet
+anchoring proposals therefore require a separate document that clearly states
+what is merely overlay-valid, what may fit within existing transaction patterns,
+and what would require independent Bitcoin review.
+
+# Specification
+
+## Categories
+
+Kapnet anchor usage falls into four categories.
+
+### Category 1: Overlay-valid only
+
+A payload or commitment is well-defined within Kapnet but this document makes no
+claim that current Bitcoin software will relay, mine, or index it in a useful
+way.
+
+### Category 2: Existing-carrier compatible in principle
+
+A payload fits into an existing general data-carrier pattern such as an
+OP_RETURN output, subject to current node policy, wallet behavior, miner
+choices, and fee economics.
+
+### Category 3: Miner-coordinated or template-dependent
+
+A payload format may be usable only with explicit miner, template generator, or
+coinbase construction cooperation.
+
+### Category 4: Requires separate Bitcoin proposal
+
+Any change that would alter standardness, relay behavior, script validation,
+block validity, or miner template semantics at the Bitcoin protocol level
+requires an independent Bitcoin proposal and is out of scope for this BIP.
+
+## No Implied Relay Guarantee
+
+Nothing in the Kapnet anchor template BIP implies that a validly formed anchor:
+
+- will relay on today’s Bitcoin network,
+- will be mined,
+- will be retained by wallets,
+- will be indexed by block explorers,
+- or will be economical.
+
+## Wallet Considerations
+
+Wallets that create anchor-bearing transactions SHOULD:
+
+- make fees explicit,
+- avoid assuming long-term explorer support,
+- expose raw transaction data when possible,
+- avoid hiding anchor bytes behind opaque UI abstractions.
+
+## Miner Considerations
+
+Miners that choose to support anchor publication SHOULD:
+
+- treat Kapnet semantics as external to Bitcoin consensus,
+- avoid presenting anchor publication as consensus endorsement,
+- make any special treatment explicit in local template policy.
+
+## Indexer Considerations
+
+Indexers MAY preserve raw anchor payloads even if they do not interpret them.
+
+Interpreted displays SHOULD distinguish:
+
+- raw carrier discovery
+- parsed Kapnet payload
+- independently validated Kapnet object
+
+## Out of Scope
+
+This BIP does not standardize:
+
+- new OP codes,
+- new standardness flags,
+- new relay permissions,
+- coinbase commitments enforced by consensus,
+- witness rule changes,
+- soft forks,
+- hard forks.
+
+# Examples
+
+## Example 1: Simple OP_RETURN publication
+
+A wallet creates a transaction with a standard data-carrier output containing a
+Kapnet knot anchor payload. This is a Category 2 attempt: compatible in
+principle, but subject to policy, fee, and miner acceptance.
+
+## Example 2: Coinbase-linked anchor
+
+A mining pool voluntarily inserts a Kapnet sidecar commitment into its coinbase
+construction pipeline. This is Category 3: miner-coordinated and not implied by
+generic wallet behavior.
+
+## Example 3: Consensus-coupled idea
+
+A proposal that would require Bitcoin nodes to validate Kapnet state roots when
+accepting blocks is Category 4 and requires a separate Bitcoin proposal. It is
+not standardized here.
+
+# Rationale
+
+Separating payload definition from deployment reality improves review quality.
+It prevents a formatting BIP from quietly smuggling in claims about Bitcoin
+network behavior that have not been accepted.
+
+# Backward Compatibility
+
+This document introduces no changes to Bitcoin consensus or policy.
+
+# Security Considerations
+
+Users may incorrectly infer that Bitcoin publication implies correctness of
+Kapnet semantics. Software SHOULD clearly separate:
+
+- payload recognized,
+- payload parsed,
+- payload semantically validated.
+
+Anchors can also leak coordination intent, market activity, or timing patterns.
+
+# Reference Implementation
+
+None.
+
+# Deployment
+
+This BIP requires no deployment. It is guidance for interpreting and discussing
+Kapnet anchor proposals.
+
+# Acknowledgements
+
+TBD
