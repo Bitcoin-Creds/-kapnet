@@ -1,0 +1,168 @@
+<pre>
+  BIP: TBD
+  Layer: Applications
+  Title: Kapnet Event Mapping to Nostr Event Kinds
+  Author: TBD
+  Comments-URI: TBD
+  Status: Draft
+  Type: Standards Track
+  Created: 2026-03-16
+  License: BSD-2-Clause
+  Requires: TBD
+</pre>
+
+# Abstract
+
+This document defines a canonical mapping from Kapnet objects to Nostr-style
+events and tags. It enables interoperable projection of Kapnet TXXMs and
+related objects into Nostr-compatible relay and client environments.
+
+# Copyright
+
+This BIP is licensed under the BSD 2-clause license.
+
+# Motivation
+
+Kapnet is expected to interact with social and relay surfaces that already
+understand Nostr-style objects. Without a canonical mapping, each client would
+invent its own tag layout and event meaning.
+
+# Specification
+
+## Scope
+
+This BIP defines a projection format. It does not require that a projected Nostr
+event preserve every replay-relevant property of the original Kapnet object.
+
+Where fidelity would be lost, the projection MUST explicitly reference the
+canonical Kapnet object hash.
+
+## Projection Envelope
+
+A projected event MUST include:
+
+- Nostr pubkey
+- created_at
+- kind
+- tags
+- content
+- signature
+
+## Kind Registry
+
+Defined projection kinds:
+
+- `kap.txxm`
+- `kap.receipt`
+- `kap.market`
+- `kap.knot`
+- `kap.package`
+- `kap.anchor`
+
+Implementations MAY map these to numeric kind values by separate registry.
+
+## Required Tags for `kap.txxm`
+
+A projected TXXM event MUST include tags:
+
+- `["kap", "txxm"]`
+- `["id", "<txxm-id-hex>"]`
+- `["class", "<message-class>"]`
+- `["ns", "<namespace-id-hex>"]`
+- `["payload", "<payload-hash-hex>"]`
+
+Optional tags include:
+
+- dependency refs
+- attachment root
+- postage class
+- weakwork refs
+- knot inclusion ref
+
+## Content Rule
+
+If the full payload is safely representable as content, the event content MAY
+contain it.
+
+Otherwise the content SHOULD be empty and the event SHOULD instead use:
+
+- `["blob", "<attachment-root-hex>"]`
+- or `["fetch", "<provider-pointer>"]`
+
+## Identity Binding
+
+The Nostr event pubkey MAY be:
+
+- the Kapnet sender key if compatible,
+- or a projection key controlled by the publisher.
+
+If a projection key distinct from the original sender is used, the event MUST
+include:
+
+- `["source-pubkey", "<original-sender-key>"]`
+
+## Losslessness
+
+A projection is lossless only if:
+
+- all replay-relevant fields are either embedded or referenced,
+- and the referenced Kapnet object is fetchable.
+
+Clients MUST NOT assume that a projected Nostr event alone is sufficient for
+validator replay.
+
+## Knot Projection
+
+A projected knot event MUST include:
+
+- knot id
+- checkpoint index
+- prior knot id
+- pre-state root
+- post-state root
+
+## Package Projection
+
+A projected kapplet publication MUST include:
+
+- package id
+- code hash
+- manifest hash
+- upgrade policy
+
+# Example
+
+A room post TXXM may be projected to a Nostr event with:
+
+- kind `kap.txxm`
+- tags for room namespace, payload hash, parent dependency
+- content containing short text if inline
+- attachment tag if media lives outside the event
+
+# Rationale
+
+The mapping prioritizes discoverability and reference integrity over forcing
+Nostr events to become full Kapnet validator objects.
+
+# Backward Compatibility
+
+This BIP does not alter Nostr or Bitcoin consensus.
+
+# Security Considerations
+
+Projection keys distinct from original sender keys can mislead clients unless
+source-binding tags are present.
+
+Clients MUST distinguish projected content from canonical replay objects.
+
+# Reference Implementation
+
+None.
+
+# Deployment
+
+This BIP is useful after the TXXM class and object formats are stable.
+
+# Acknowledgements
+
+TBD
