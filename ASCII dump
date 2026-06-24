@@ -1,0 +1,369 @@
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                         K A P N E T   R E C O M P O S A B L E   W E B                            ║
+║                                                                                                      ║
+║            "Slow bytes are acceptable. Ambiguous authority is not."                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+                                           BIRD'S-EYE VIEW
+                         digital forest / island / institutional organism map
+
+
+                                      ┌───────────────────────────┐
+                                      │        BITCOIN            │
+                                      │  clock / mass / headers   │
+                                      │  HRS → HedlBit parsing    │
+                                      └─────────────┬─────────────┘
+                                                    │
+                                                    │ external time, mass, patience reference
+                                                    ▼
+
+        ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ KAPNET SEA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+
+                 .-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-.
+              .-'                                                                            '-.
+            .'                         K O R   C A N O P Y                                    '.
+           /            operating organism / authority / meaning membrane                        \
+          /                                                                                       \
+         |             ┌───────────────────────────────────────────────────────┐                   |
+         |             │                    site.dibbys.kor                    │                   |
+         |             │                                                       │                   |
+         |             │   roles     policy     review     mounts     state    │                   |
+         |             │    │         │          │          │          │       │                   |
+         |             │    ▼         ▼          ▼          ▼          ▼       │                   |
+         |             │  human → KScript → TXXM → KapGit → KOM/KRC → view     │                   |
+         |             └───────────────────────────────────────────────────────┘                   |
+          \                                                                                       /
+           \              Authority lives here. Bytes do not decide meaning.                      /
+            '.                                                                                 .'
+              '-.___________________________________________________________________________.-'
+
+
+                    │                         │                         │
+                    │                         │                         │
+                    ▼                         ▼                         ▼
+
+
+      ┌───────────────────────┐    ┌────────────────────────┐    ┌────────────────────────┐
+      │      PortalKOR         │    │        KapGit           │    │        KOM / KRC        │
+      │  human viewport        │    │ canonical state tree    │    │ recomposition contract  │
+      │                        │    │                        │    │                        │
+      │  public view           │    │ accepted files          │    │ chunk map               │
+      │  member view           │    │ diffs                   │    │ shard map               │
+      │  operator view         │    │ commits                 │    │ hashes                  │
+      │  archive view          │    │ review trail            │    │ codecs                  │
+      │  emergency view        │    │ reproducible state      │    │ mount targets           │
+      └───────────┬───────────┘    └────────────┬───────────┘    └────────────┬───────────┘
+                  │                             │                             │
+                  │                             │                             │
+                  └───────────────┬─────────────┴─────────────┬───────────────┘
+                                  │                           │
+                                  ▼                           ▼
+
+
+                         ┌─────────────────── K N T ───────────────────┐
+                         │        Kapnet + Nostr + Tor route membrane    │
+                         │                                               │
+                         │   clearnet        onion        relay          │
+                         │      │             │            │             │
+                         │      ▼             ▼            ▼             │
+                         │  getdibbys.com   operator     TXXM/event      │
+                         │  public cache    portal       movement        │
+                         └───────────────┬───────────────┬───────────────┘
+                                         │               │
+                                         │               │
+                                         ▼               ▼
+
+
+             ┌────────────────────────────────────┐       ┌────────────────────────────────────┐
+             │              KSP NODES             │       │               dStor                │
+             │        Kapnet Service Providers    │       │       distributed fragment field    │
+             │                                    │       │                                    │
+             │   storage KSP                      │◄─────►│   chunks      blobs      shards    │
+             │   pinning KSP                      │       │   PDFs        images     bundles   │
+             │   relay KSP                        │       │   snapshots   assets     archives  │
+             │   render KSP                       │       │   encrypted fragments              │
+             │   validation KSP                   │       │   redundant mirrors                │
+             │   index/search KSP                 │       │                                    │
+             │                                    │       │  dStor says: bytes can be fetched. │
+             │  KSP serves. KOR governs.          │       │  KOR says: bytes may be mounted.   │
+             └────────────────────────────────────┘       └────────────────────────────────────┘
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                                        ORGAN VIEW
+                             one Kapnet web object as a living body
+
+                         ┌───────────────────────────────────────────────┐
+                         │                  WEB OBJECT                   │
+                         │                                               │
+                         │     "Dibby's public home page", for example   │
+                         └────────────────────────┬──────────────────────┘
+                                                  │
+             ┌────────────────────────────────────┼────────────────────────────────────┐
+             │                                    │                                    │
+             ▼                                    ▼                                    ▼
+
+    ┌──────────────────┐              ┌──────────────────┐              ┌──────────────────┐
+    │   IDENTITY        │              │    MEMORY         │              │      BODY         │
+    │                  │              │                  │              │                  │
+    │ KOR address      │              │ KapGit tree      │              │ assets           │
+    │ keys             │              │ accepted state   │              │ HTML             │
+    │ roles            │              │ review history   │              │ images           │
+    │ authority graph  │              │ TXXM lineage     │              │ PDFs             │
+    └────────┬─────────┘              └────────┬─────────┘              └────────┬─────────┘
+             │                                 │                                 │
+             ▼                                 ▼                                 ▼
+    ┌──────────────────┐              ┌──────────────────┐              ┌──────────────────┐
+    │  CIRCULATION     │              │     IMMUNE        │              │   PERCEPTION     │
+    │                  │              │                  │              │                  │
+    │ KNT routes       │              │ policy gates     │              │ PortalKOR        │
+    │ Nostr relays     │              │ human approval   │              │ public cache     │
+    │ Tor onion        │              │ redaction        │              │ operator view    │
+    │ clearnet shell   │              │ quarantine       │              │ archive view     │
+    └────────┬─────────┘              └────────┬─────────┘              └────────┬─────────┘
+             │                                 │                                 │
+             └─────────────────────────────────┴─────────────────────────────────┘
+                                               │
+                                               ▼
+
+                                ┌────────────────────────────┐
+                                │        METABOLISM           │
+                                │                            │
+                                │ HedlBit postage            │
+                                │ weakwork packet friction   │
+                                │ KSP service cost           │
+                                │ storage durability         │
+                                │ attention / idemuro burn   │
+                                └────────────────────────────┘
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                                      RECOMPOSITION VIEW
+                          how a human sees a page without trusting a server
+
+
+        HUMAN
+          │
+          │ opens getdibbys.com / onion / local PortalKOR
+          ▼
+
+    ┌────────────────────┐
+    │    PortalKOR        │
+    │  requested view     │
+    └─────────┬──────────┘
+              │
+              │ "What may I show?"
+              ▼
+    ┌────────────────────┐
+    │        KOR          │
+    │ authority / policy  │
+    └─────────┬──────────┘
+              │
+              │ "This public view is current and mountable."
+              ▼
+    ┌────────────────────┐
+    │      KapGit         │
+    │ canonical state     │
+    └─────────┬──────────┘
+              │
+              │ "This tree/hash/version is accepted."
+              ▼
+    ┌────────────────────┐
+    │     KOM / KRC       │
+    │ recomposition map   │
+    └─────────┬──────────┘
+              │
+              │ "Fetch these chunks, verify these hashes, decode this way."
+              ▼
+    ┌────────────────────┐
+    │       KSPs          │
+    │ service providers   │
+    └─────────┬──────────┘
+              │
+              │ "Storage, rendering, validation, relay, pinning, index."
+              ▼
+    ┌────────────────────┐
+    │       dStor         │
+    │ fragments / blobs   │
+    └─────────┬──────────┘
+              │
+              │ chunks return slowly, maybe DSL speed
+              ▼
+    ┌────────────────────┐
+    │  VERIFY / DECODE    │
+    │ hash / sig / policy │
+    └─────────┬──────────┘
+              │
+              │ "Bytes are valid and allowed."
+              ▼
+    ┌────────────────────┐
+    │   LOCAL CACHE       │
+    │ mounted artifact    │
+    └─────────┬──────────┘
+              │
+              ▼
+    ┌────────────────────┐
+    │   PUBLIC VIEW       │
+    │ safe recomposition  │
+    └────────────────────┘
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                                         MUTATION VIEW
+                         how a change moves from human/agent into state
+
+
+       AGENT / HERMES                      HUMAN OPERATOR                         KOR
+             │                                   │                                  │
+             │ draft change                      │                                  │
+             ▼                                   │                                  │
+    ┌──────────────────┐                         │                                  │
+    │ proposal draft    │                         │                                  │
+    └────────┬─────────┘                         │                                  │
+             │                                   │                                  │
+             │ creates TXXM                      │                                  │
+             ▼                                   ▼                                  ▼
+    ┌────────────────────────────────────────────────────────────────────────────────────┐
+    │                                      TXXM                                          │
+    │ signed mutation packet: propose / review / approve / reject / publish / revoke     │
+    └───────────────────────────────────────┬────────────────────────────────────────────┘
+                                            │
+                                            │ enters review queue
+                                            ▼
+                                  ┌─────────────────────┐
+                                  │   KScript / policy   │
+                                  │ admissibility check  │
+                                  └──────────┬──────────┘
+                                             │
+                ┌────────────────────────────┴────────────────────────────┐
+                │                                                         │
+                ▼                                                         ▼
+      ┌──────────────────┐                                      ┌──────────────────┐
+      │     REJECT        │                                      │     ACCEPT        │
+      │ no state change   │                                      │ state mutation    │
+      └──────────────────┘                                      └────────┬─────────┘
+                                                                         │
+                                                                         ▼
+                                                               ┌──────────────────┐
+                                                               │     KapGit       │
+                                                               │ accepted commit  │
+                                                               └────────┬─────────┘
+                                                                        │
+                                                                        ▼
+                                                               ┌──────────────────┐
+                                                               │    KOM / KRC     │
+                                                               │ new manifest     │
+                                                               └────────┬─────────┘
+                                                                        │
+                                                                        ▼
+                                                               ┌──────────────────┐
+                                                               │      dStor       │
+                                                               │ publish shards   │
+                                                               └────────┬─────────┘
+                                                                        │
+                                                                        ▼
+                                                               ┌──────────────────┐
+                                                               │    PortalKOR     │
+                                                               │ mount new view   │
+                                                               └──────────────────┘
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                                          BYTE VIEW
+                              one TXXM packet drawn as a tiny organism
+
+
+       ┌───────────────────────────────────────────────────────────────────────────────┐
+       │                                TXXM PACKET                                    │
+       └───────────────────────────────────────────────────────────────────────────────┘
+
+       ┌────────┬────────┬────────┬──────────────┬──────────────┬──────────────┬──────┐
+       │ MAGIC  │ VERSION│ FLAGS  │  KOR ADDRESS │ PARENT / REF │   TIMING     │ BODY │
+       └────────┴────────┴────────┴──────────────┴──────────────┴──────────────┴──────┘
+          │        │        │            │              │              │            │
+          │        │        │            │              │              │            │
+          ▼        ▼        ▼            ▼              ▼              ▼            ▼
+       identifies  wire     packet       governed       lineage /      created      typed
+       Kapnet      format   mode         organism       previous       expiry       payload
+       packet              proposal                     state          knot/time    intent
+
+
+       ┌───────────────────────────────────────────────────────────────────────────────┐
+       │                               TXXM PAYLOAD                                    │
+       └───────────────────────────────────────────────────────────────────────────────┘
+
+       ┌───────────────┬──────────────┬──────────────┬──────────────┬───────────────┐
+       │ ACTION TYPE    │ TARGET       │ DELTA        │ POLICY HINT  │ ATTACHMENTS   │
+       └───────────────┴──────────────┴──────────────┴──────────────┴───────────────┘
+              │               │              │              │                │
+              ▼               ▼              ▼              ▼                ▼
+        propose_page     object/view    patch/change   requested       hashes / blobs /
+        approve_mount    role/state     mutation       review path     KOM / asset refs
+        publish_object   route/cache
+        revoke_view
+        mirror_shards
+
+
+       ┌───────────────────────────────────────────────────────────────────────────────┐
+       │                             TXXM VERIFICATION                                 │
+       └───────────────────────────────────────────────────────────────────────────────┘
+
+       ┌──────────────┬──────────────┬──────────────┬──────────────┬───────────────┐
+       │ PAYLOAD HASH  │ SIGNATURE    │ WEAKWORK     │ HB POSTAGE   │ ROUTE RECEIPT │
+       └──────────────┴──────────────┴──────────────┴──────────────┴───────────────┘
+              │              │              │              │                │
+              ▼              ▼              ▼              ▼                ▼
+          exact bytes    accountable   packet-level   seriousness /     relay / KSP /
+          committed      actor         friction       attention cost    delivery proof
+
+
+       ┌───────────────────────────────────────────────────────────────────────────────┐
+       │                           SAME PACKET AS BYTES                                │
+       └───────────────────────────────────────────────────────────────────────────────┘
+
+       4b 54 58 58 4d | 01 | a4 | 6b 6f 72 3a 73 69 74 65 2e 64 69 62 62 79 73
+       └── MAGIC ─────┘ └V┘ └F┘ └────────────── kor:site.dibbys... ────────────────
+
+       70 61 72 65 6e 74 3a 61 62 63 31 32 33 00 00 00 00 69 7c 41 20
+       └──────────── parent/ref/hash lineage ────────────┘ └──── timing ────────┘
+
+       7b 22 61 63 74 69 6f 6e 22 3a 22 50 52 4f 50 4f 53 45 5f 50 55 42 4c 49 53 48
+       └──────────── JSON / CBOR / bounded typed payload: PROPOSE_PUBLISH... ───────────
+
+       3a 22 68 6f 6d 65 2e 6d 64 22 2c 22 68 61 73 68 22 3a 22 2e 2e 2e 22 7d
+       └──────────── target, delta, hashes, attachments, policy hints ────────────────┘
+
+       30 45 02 21 ... signature ... 03 ac 91 | 00 00 ww | 00 00 hb | receipt
+       └──────────── signature / weakwork / HedlBit / route receipt ──────────────────┘
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                                      NON-COLLAPSE LAW
+
+
+        service is not authority          storage is not meaning          transport is not mutation
+
+        proposal is not approval          cache is not canon              view is not organism
+
+        KSP serves                         KOR governs                     human approval binds
+
+        dStor carries fragments            KapGit carries accepted state    TXXM carries action
+
+        KOM/KRC carries recomposition       KNT carries routes              PortalKOR carries perception
+
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║              KAPNET WEB = GOVERNED MEMORY BECOMING VISIBLE THROUGH VERIFIED RECOMPOSITION          ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
