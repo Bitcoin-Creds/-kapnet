@@ -1,0 +1,772 @@
+KAPNET_PRIMER_RECOMPUTED_v1
+
+identity:
+  name: Kapnet
+  expanded_name:
+    - Knoxtr-Amethyst Protocol / network family
+  one_line:
+    - Bitcoin-anchored recursive coordination data machine
+  shortest_true_description:
+    - Kapnet generalizes transaction grammar from monetary state transition to recursive DAO-state mutation
+  deeper_description:
+    - Kapnet is a Bitcoin-anchored, weakwork-mediated, knot-checkpointed coordination system in which recursive DAO-shaped data objects are expressed through TXXM envelopes, mutated by KScript, accounted in KapActivity/heldbit-native state, aggregated into blobs, selected through braid competition, and crystallized into knots over an SMT recursive forest with cryptoprovenance.
+
+do_not_misread:
+  - not a generic altcoin
+  - not a replacement for Bitcoin
+  - not just Nostr with tokens
+  - not just a smart contract chain
+  - not just a forum
+  - not just a governance app
+  - not merely a social protocol
+  - not a single globally totalizing social canon
+  - not primarily a metaphor system, even if metaphors are useful
+  - fundamentally it is typed, relayed, proven, mutated, checkpointed data
+
+first_principle:
+  sentence:
+    - in the end this is all data
+  consequence:
+    - Bitcoin block is data in a constrained canonical format
+    - Bitcoin transaction is data in a constrained canonical format
+    - Kapnet extends this pattern into richer coordination-state data formats
+  strongest_compression:
+    - Bitcoin is a constrained data machine for monetary state transition
+    - Kapnet is a richer constrained data machine for coordination state transition
+
+base_physics:
+  Bitcoin_role:
+    - objective ordering
+    - signatures and authorization
+    - scarcity preservation
+    - blockspace
+    - difficulty-adjusted temporal cadence
+    - settlement finality anchor
+    - external reality condition for Kapnet payload anchoring
+  memetic_translation:
+    - Bitcoin is base physics
+    - Bitcoin is thermodynamic bedrock
+    - Bitcoin is the objective money-time substrate
+  important_distinction:
+    - Kapnet inherits legitimacy from Bitcoin anchoring
+    - Kapnet does not erase or replace Bitcoin's role
+    - overlay consensus must never be confused with Bitcoin settlement consensus
+
+kapnet_core_thesis:
+  statement:
+    - Kapnet extends Bitcoin's constrained transaction logic into recursive coordination mutation
+  what_it_adds:
+    - richer transaction envelope grammar
+    - native overlay accounting/state cells
+    - weakwork-mediated propagation and selection
+    - braid-stage contested candidate history
+    - knot-stage checkpoint crystallization
+    - recursive DAO-shaped object model
+    - KScript mutation grammar over recursive state
+    - relation-rich cryptoprovenance beyond simple coin ancestry
+  what_it_organizes:
+    - memberships
+    - rules
+    - relations
+    - archives
+    - validation
+    - routing
+    - treasury allocation
+    - institutional memory
+    - federated governance
+    - bridge behavior
+    - machine and human agency surfaces
+
+universal_reduction:
+  sentence:
+    - everything important in Kapnet is DAO-shaped data
+  meaning:
+    - not "DAO" merely as an organization
+    - DAO is the universal coordination object grammar
+    - recursively nested stateful bounded rule-bearing relation-bearing mutation-capable objects
+  consequence:
+    - submission is DAO-shaped
+    - room is DAO-shaped
+    - guild is DAO-shaped
+    - member is DAO-shaped
+    - federation is DAO-shaped
+    - the whole system is DAO-shaped
+
+major_refinement_on_DAO:
+  old_view:
+    - DAO as institution
+  stronger_view:
+    - DAO as canonical TXXM format specification / universal coordination object grammar
+  strongest_sentence:
+    - the DAO is the TXXM format spec
+  meaning_of_that:
+    - DAO is the admissible schema by which recursive coordination objects are expressed, proven, relayed, and mutated
+    - rooms, guilds, members, submissions are concrete stateful instances carried through that grammar
+  implication:
+    - Kapnet is DAO-shaped because admissible mutation passes through DAO-typed transaction and payload architecture
+
+recursive_ontology:
+  statement:
+    - the same kind of thing appears at many scales and under many contextual roles
+  examples:
+    - submission = minimal accepted DAO-form
+    - room = submission-cluster DAO-form
+    - guild = room-cluster DAO-form
+    - federation = guild-cluster DAO-form
+    - system = maximal recognized DAO horizon
+  stronger_relational_statement:
+    - every Kapnet object is a submission from the perspective of its containing DAO
+    - every submission is a potential containing DAO from the perspective of its internal state
+  what_changes_across_scale:
+    - scope
+    - persistence
+    - membrane thickness
+    - permission surface
+    - internal heterogeneity
+    - relation topology
+    - forkability
+    - checkpoint relevance
+    - dependency burden
+
+data_model_stack:
+  primitive_data_types:
+    - keys
+    - signatures
+    - hashes
+    - headers
+    - commitment roots
+    - relation tags
+    - object IDs
+    - paths into recursive state
+    - timing / epoch references
+  state_atoms:
+    - KapActivity cells
+    - hedlbit-denominated units
+    - membership cells
+    - rule cells
+    - relation cells
+    - treasury cells
+    - witness cells
+  mutation_envelopes:
+    - TXXM
+  mutation_language:
+    - KScript
+  aggregation_units:
+    - blobs
+  checkpoint_units:
+    - knots
+  committed_state_substrate:
+    - SMT recursive forest
+  historical_truth_surface:
+    - braid history plus knot lineage plus cryptoprovenance graph
+
+Bitcoin_vs_Kapnet_mapping:
+  Bitcoin:
+    unit_of_state:
+      - UTXO
+    mutation_object:
+      - transaction
+    aggregation_object:
+      - block
+    accepted_history:
+      - chain
+    mutation_predicate:
+      - Script + consensus rules
+    committed_state:
+      - UTXO set
+    provenance:
+      - tx graph ancestry
+  Kapnet:
+    unit_of_state:
+      - KapActivity cell / hedlbit-native accounting atom
+    mutation_object:
+      - TXXM envelope carrying KapActivity mutation body
+    aggregation_object:
+      - blob, then knot checkpoint
+    accepted_history:
+      - braid to knot lineage
+    mutation_predicate:
+      - KScript + DAO grammar + policy constraints
+    committed_state:
+      - SMT recursive forest
+    provenance:
+      - cryptoprovenance relation graph over rules, memberships, relations, mutations, forks, delegations
+
+KapActivity:
+  role:
+    - native accounting and state basis of Kapnet
+  strongest_analogy:
+    - KapActivity are the UTXO of Kapnet
+  base_unit:
+    - hedlbit
+  implications:
+    - spendable / consumable / transformable native cells
+    - accountable substrate distinct from expressive message envelope
+    - TXXMs consume, mutate, relate, or authorize changes to KapActivity cells
+  not_to_confuse_with:
+    - TXXM itself
+    - raw chat content
+    - generic event stream
+
+hedlbit:
+  role:
+    - base native accounting/fuel/right unit
+  conceptual_sources:
+    - patience-weighted participation
+    - reserve-time or long-held sovereignty logic in broader Kapnet vision
+  functional_uses:
+    - expenditure
+    - gating
+    - native accounting
+    - mutation rights
+    - routing/validation weighting surfaces
+  memetic_translation:
+    - hedlbit is the base unit of native Kapnet state-actionability
+
+TXXM:
+  expanded_name:
+    - Transaction CrossMail
+  role:
+    - expressive state transition packet / envelope
+  not_exactly:
+    - not simply the accounting atom
+  can_carry:
+    - recursive state mutations
+    - membership changes
+    - rule updates
+    - relation changes
+    - archive references
+    - external/base-chain triggers
+    - cross-domain coordination logic
+    - bridge actions
+    - weakwork and witness-related metadata
+  strong_sentence:
+    - TXXM is the generalized transaction/message/mutation envelope of Kapnet
+
+submission_txxm:
+  minimal_outer_structure:
+    - payload_hash
+    - payload_size
+    - payload
+  design_principle:
+    - compact canonical envelope outside
+    - expressive structured mutation body inside
+  strongest_sentence:
+    - a submission TXXM is a compact commitment envelope over a layered mutation payload
+
+submission_payload:
+  includes:
+    - wellformed Bitcoin header
+    - wwclaim proof
+    - valid wwsigned KapActivity metadata blobs
+    - actual KapActivity data
+  layered_reading:
+    Bitcoin_header:
+      role:
+        - anchor to specific base-chain reality context
+        - objective ordering reference
+        - epoch and header horizon reference
+        - fork-aware interpretive anchor
+    wwclaim:
+      role:
+        - prove weakwork-linked admissibility / right of claim
+      discussed_forms:
+        - coinbase
+        - xor lottery
+    wwsigned_meta:
+      role:
+        - signed witness/indexing/routing/validation metadata blobs
+        - permit shallower validation and relay classification before deep semantic execution
+    kapactivity_body:
+      role:
+        - actual recursive coordination mutation body
+        - memberships, rules, relations, treasury effects, room/guild/member/object changes, script-bearing deltas
+  best_summary:
+    - payload = anchor + claim + witness + mutation body
+
+provisional_type_sketch:
+  SubmissionTXXM:
+    fields:
+      - payload_hash: Hash256
+      - payload_size: u64
+      - payload: SubmissionPayload
+  SubmissionPayload:
+    fields:
+      - btc_header: BitcoinHeader
+      - wwclaim: WWClaimProof
+      - wwsigned_meta: [KapActivityMetaBlob]
+      - kapactivity: KapActivityBody
+
+KScript:
+  role:
+    - constrained mutation grammar over recursive DAO state
+  not_to_misread:
+    - not unlimited global compute theater
+    - not Ethereum-style universal VM as primary design center
+  intended_properties:
+    - deterministic
+    - bounded
+    - replayable
+    - policy-checkable
+    - resource-constrained
+    - suitable for mutation over recursive object graphs/forests
+  mutates:
+    - SMT recursive forest of DAO-shaped objects
+  strongest_sentence:
+    - within TXXM lives KScripted mutation of the recursive coordination state forest
+
+SMT_recursive_forest:
+  role:
+    - committed state substrate of Kapnet
+  not_flat:
+    - not one simple map only
+  better_understanding:
+    - recursive forest of state trees / dictionaries / namespaces / object-local states
+  may_encode:
+    - memberships
+    - rules
+    - relations
+    - balances
+    - permissions
+    - treasuries
+    - room/guild/member/object states
+    - archived references
+    - dependency links
+    - fork lineage
+  strong_phrase:
+    - recursive forest of highly recombinant cryptoprovenance
+
+cryptoprovenance:
+  role:
+    - cryptographic derivation history of important relations and mutations
+  extends_beyond_Bitcoin:
+    - not just value ancestry
+    - object ancestry
+    - membership ancestry
+    - rule ancestry
+    - relation ancestry
+    - validation ancestry
+    - delegation ancestry
+    - fork ancestry
+    - compositional ancestry
+  recombinant_meaning:
+    - histories can branch, merge, be inherited, wrapped, reused, specialized
+  strongest_sentence:
+    - Kapnet is a provenance engine for institutional reality, not just monetary transfer ancestry
+
+blobs_braids_knots:
+  TXXM_vs_blob:
+    note:
+      - there are two valid readings, but latest refinement leans toward blob as the economically legible transaction analogue
+  preferred_mapping:
+    - TXXM = expressive packet layer
+    - blob = Kapnet transactionally meaningful aggregation unit
+    - knot = Kapnet block/checkpoint analogue
+  braid:
+    role:
+      - contested pre-checkpoint topology of candidate blob history
+      - multiple candidate append surfaces may coexist
+  knot:
+    role:
+      - checkpoint crystallization object
+      - accepted aggregate state transition / block analogue
+  best_analogy:
+    - Bitcoin tx : block :: Kapnet blob : knot
+  selection_flow:
+    - TXXMs feed blobs
+    - blobs compete/compose in braids
+    - knots checkpoint accepted braid slices into replayable history
+
+consensus_model:
+  Bitcoin_layer:
+    - heaviest valid chain for settlement facts
+  Kapnet_layer:
+    - braid competition before checkpoint
+    - knot checkpointing after bounded selection
+  critical_distinction:
+    - hard settlement finality != soft/conditional/strategic pre-knot append confidence
+  forkgivening:
+    - plural coexistence of divergent candidate or institutional realities under explicit rules
+  multiverse_implication:
+    - no necessary singular total social canon above the monetary substrate
+    - plural room/guild/federation/chaintip realities may coexist
+
+validation_pipeline:
+  shallow_validation:
+    - envelope structure sane
+    - payload hash matches
+    - payload size sane
+    - Bitcoin header wellformed
+    - wwclaim parseable
+    - metadata signatures valid
+  deep_validation:
+    - KapActivity object semantics
+    - KScript legality
+    - SMT path validity
+    - membership/rule/relation consistency
+    - dependency satisfaction
+    - conflict handling
+    - local DAO policy compatibility
+    - archive/witness sufficiency
+  significance:
+    - allows staged filtering, routing, and resource-efficient verification
+
+relation_algebra:
+  structural_relations:
+    - contains
+    - part-of
+    - wraps
+    - instantiates
+    - extends
+    - specializes
+    - aggregates
+  process_relations:
+    - submits-to
+    - validates
+    - amends
+    - executes
+    - routes-to
+    - references
+    - depends-on
+    - challenges
+    - appeals-to
+  governance_relations:
+    - governs
+    - delegates-to
+    - elects
+    - represents
+    - vetoes
+    - ratifies
+    - inherits-rules-from
+  economic_relations:
+    - funds
+    - burns-into
+    - subsidizes
+    - invoices
+    - rewards
+    - stakes-in
+    - allocates-to
+  temporal_relations:
+    - precedes
+    - checkpoints
+    - supersedes
+    - forks-from
+    - merges-with
+    - precipitates
+    - decays-from
+  epistemic_relations:
+    - attests
+    - certifies
+    - disputes
+    - annotates
+    - summarizes
+    - indexes
+    - canonizes
+
+classification_axes:
+  scale_role:
+    - atomic
+    - local
+    - meso
+    - institutional
+    - federated
+    - civilizational
+    - metacivilizational
+  functional_role:
+    - deliberate
+    - validate
+    - curate
+    - execute
+    - allocate
+    - archive
+    - route
+    - negotiate
+    - compose
+    - dispute-resolve
+    - research
+    - socialize
+    - educate
+    - recruit
+    - fork
+    - interoperate
+    - ritualize
+  relational_role:
+    - contains
+    - contained-by
+    - validates
+    - validated-by
+    - references
+    - routes-through
+    - governs
+    - governed-by
+    - composes-with
+    - federates-with
+    - forks-from
+    - bridges-to
+    - archives-for
+    - relays-for
+
+room_types:
+  principle:
+    - room is not just a chat channel; it is a bounded local coordination organ / DAO-form
+  examples:
+    - deliberation room
+    - validation room
+    - execution room
+    - treasury room
+    - routing room
+    - archive room
+    - research room
+    - dispute room
+    - onboarding room
+    - ritual room
+    - market room
+    - interface room
+
+guild_types:
+  principle:
+    - guild is a more durable macro-room / mission wrapper / DAO-form
+  examples:
+    - knowledge guild
+    - builder guild
+    - validation guild
+    - economic guild
+    - governance guild
+    - media guild
+    - education guild
+    - care guild
+    - security guild
+    - bridge guild
+    - experimental guild
+    - ceremonial guild
+
+DAO_types:
+  principle:
+    - since everything important is DAO-shaped, "DAO type" means schema/role morphology
+  examples:
+    - atomic DAO
+    - agent DAO
+    - conversational DAO
+    - operational DAO
+    - institutional DAO
+    - treasury DAO
+    - protocol DAO
+    - federation DAO
+    - meta-DAO
+    - shadow DAO
+    - fork DAO
+    - membrane DAO
+    - archive DAO
+    - event DAO
+    - composite DAO
+
+members:
+  refinement:
+    - member is not merely a user row; member can itself be modeled as DAO-shaped stateful agent object
+  may_include:
+    - identity
+    - memory
+    - treasury/balances
+    - rights
+    - obligations
+    - credentials
+    - delegations
+    - reputation
+    - tools
+    - automata
+  symmetry:
+    - members submit submissions
+    - submissions become rooms
+    - rooms compose guilds
+    - guilds contain members
+    - members may themselves contain sub-identities, agents, balances, delegates, policies
+
+client_model:
+  strong_claim:
+    - a correct client is not just a wallet or passive sync node
+  must_do:
+    - sync relevant knots
+    - know dependency DAOs for relay/archive/raw KapActivity access
+    - source and retain relevant raw KapActivity
+    - continuously acquire weakwork from markets, hashing, or wwfaucets
+    - observe candidate braids
+    - score likely future heaviest braids
+    - append blobs to braid slices with high expected next-knot inclusion likelihood
+  strongest_sentence:
+    - correct clients are relevance-scoped knot syncers, dependency-closed KapActivity archivists, continuous weakwork acquirers, and probabilistic heaviest-braid append optimizers
+
+client_correctness_dimensions:
+  validation_correctness:
+    - verify structure, proofs, signatures, mutation legality, knot admissibility
+  sync_correctness:
+    - acquire relevant knots, dependencies, witnesses, archives, and raw activity
+  strategic_correctness:
+    - choose effective append behavior under uncertainty
+  implication:
+    - a client can be validationally correct yet strategically poor
+
+client_modules:
+  knot_tracker:
+    - maintain relevant knot horizon
+  dependency_DAO_resolver:
+    - compute dependency closure for active horizons
+  raw_kapactivity_store:
+    - preserve and fetch replay-relevant bodies
+  weakwork_manager:
+    - buy, hash, faucet-subscribe, inventory-track, allocate
+  braid_observer:
+    - maintain candidate braid graph
+  braid_scorer:
+    - estimate next-knot heaviest probabilities
+  blob_builder:
+    - compose append candidates
+  append_policy_engine:
+    - decide where and when to append / hedge / hold
+
+weakwork:
+  role:
+    - pre-checkpoint propagation, selection, and append competitiveness resource
+  acquisition_channels:
+    - markets
+    - hashing
+    - wwfaucets
+  wwclaim_forms_discussed:
+    - coinbase
+    - xor lottery
+  significance:
+    - client must treat weakwork as live operational fuel, not static background fact
+  not_to_confuse_with:
+    - Bitcoin final settlement work itself
+  memetic_translation:
+    - weakwork prices attention and append competitiveness before knot crystallization
+
+node_model:
+  strong_claim:
+    - node is a hyper-composable interfacing agency
+  node_is_not:
+    - not a dumb terminal
+    - not a purely sovereign isolated box
+    - not just a wallet
+    - not just a relay client
+  node_composes:
+    secrets:
+      - keys
+      - credentials
+      - permissions
+      - local policy
+      - scoped authority
+      - hidden preferences
+    public_tip_state:
+      - Bitcoin header horizon
+      - accepted knots
+      - visible braid candidates
+      - DAO state roots
+      - public metadata surfaces
+    provider_lookups:
+      - archive retrieval
+      - weakwork markets
+      - witness data
+      - dependency DAOs
+      - service endpoints
+      - bridge information
+    relay_subnets:
+      - DAO-local relay domains
+      - room relay surfaces
+      - archive relays
+      - weakwork relays
+      - bridge relays
+      - discovery relays
+  strongest_sentence:
+    - a Kapnet node is a programmable membrane between hidden capability and visible coordination
+  agency_generated_by:
+    - combining secrets
+    - local policy
+    - public state awareness
+    - provider capabilities
+    - relay participation
+    - local mutation construction
+  outputs:
+    - signed submissions
+    - blob construction
+    - provider requests
+    - state interpretation
+    - selective routing
+    - braid append choice
+    - archive and relay behavior
+
+sync_and_archive:
+  principle:
+    - knots alone are not enough for replayability and autonomous verification
+  a_correct_client_needs:
+    - checkpoint summaries / knot commitments
+    - raw underlying KapActivity and/or recoverable blob data
+    - dependency-aware archive strategy
+  implication:
+    - archive is part of correctness, not optional decoration
+
+relevance_horizon:
+  meaning:
+    - client need not sync every conceivable knot/DAO in existence
+    - must sync what is relevant to its DAO horizon and dependency closure
+  determined_by:
+    - subscribed DAOs
+    - local policy
+    - relay/archive dependencies
+    - expected participation zones
+    - likely append relevance
+  phrase:
+    - Kapnet sync is relevance-scoped, not merely global or light
+
+institutional_time:
+  principle:
+    - block-clock and knot cadence matter more than wall-clock frenzy
+  uses:
+    - checkpoint opportunities
+    - precipitation rhythms
+    - governance cadence
+    - bounded uncertainty windows
+  broader_memetic_frame:
+    - Bitcoin gives objective time
+    - Kapnet extends this into coordination-time / institutional-time
+
+manim_visual_grammar_refinement:
+  for_explainers:
+    - visualize node as membrane between secrets and public state
+    - providers as modular capability surfaces, not central masters
+    - relay subnets as overlapping bounded graph neighborhoods
+    - public/private distinction must remain strict
+    - composition should be shown via transformations, not just static diagrams
+  useful recurring motifs:
+    - Bitcoin lower bedrock band
+    - submission card <-> graph node transformation
+    - braid as layered DAG with multiple live tips
+    - knot as compression/checkpoint ring
+    - state root side panel
+    - guild/room nested containers
+    - node interior for secrets/local policy
+    - lateral provider surfaces
+    - overlapping relay subnet regions
+
+most_important_equivalences:
+  - Bitcoin block is formatted data
+  - Bitcoin tx is formatted data
+  - TXXM is more expressive transaction-format data
+  - KapActivity is the native UTXO-like state basis of Kapnet
+  - hedlbit is the base native unit
+  - blobs are the transactionally meaningful aggregation units of Kapnet
+  - knots are the block/checkpoint analogues
+  - DAO is the universal mutation/object grammar
+  - KScript is the constrained mutation language
+  - SMT recursive forest is the committed state substrate
+  - cryptoprovenance is the derivation history of recursive institutional reality
+
+super_compressed_thesis:
+  text:
+    - Kapnet is a recursive proof-carrying coordination-state data machine whose admissible objects are DAO-typed TXXM payloads anchored to Bitcoin header reality, whose native accounting basis is KapActivity in hedlbit units, whose mutations are expressed in KScript over an SMT recursive forest of memberships, rules, and relations, whose candidate histories compete in braids, whose accepted aggregate state is crystallized in knots, and whose correct clients are dependency-aware weakwork-sourcing knot-syncing append strategists.
+
+shorter_prompt_seed:
+  text:
+    - Model Kapnet as Bitcoin's transaction logic generalized from money transfer to recursive institutional mutation. Everything important is DAO-shaped data. Submission TXXMs commit to payloads containing Bitcoin header anchors, weakwork claims, signed metadata witnesses, and KapActivity mutation bodies. KapActivity is the native UTXO-like state basis in hedlbit units. TXXMs feed blobs, blobs compete in braids, knots checkpoint accepted history, and KScript mutates an SMT recursive forest of memberships, rules, and relations under cryptoprovenance. Nodes are programmable membranes composing secrets, public tip state, providers, and relay subnets into agency.
+
+ultimate_memetic_compression:
+  - hash -> claim -> witness -> mutation -> blob -> braid -> knot -> root -> institution -> federation -> multiverse

@@ -1,0 +1,305 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage{titlesec}
+
+\titleformat{\section}{\Large\bfseries}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection.}{0.6em}{}
+
+\title{\textbf{Kapnet as Encapsulation Membrane}\\
+\large Adjacent Protocols, Web-Mimetic Forms, and the Kapactive Reconstitution of Network Culture}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Kapnet should not be understood as a replacement for every useful protocol, application, editor, relay, store, chat system, mesh, identity layer, or web interface. Its more precise role is to act as an encapsulation membrane: it receives, wraps, interprets, governs, prices, renders, replays, and, when necessary, anchors the activity that passes through adjacent systems. Bitcoin supplies the innermost public reference clock and proof-of-work ordering substrate. Nostr, WhiteNoise, CryptPad, Blossom, libk26mesh, IPFS, Git, CRDT systems, local-first editors, LLM sessions, mesh protocols, and web-like interfaces each provide partial affordances. Kapnet does not merely ingest their outputs as screenshots, PDFs, exports, or blobs. It also reimplements their social-computational patterns in a Kapactive way. The web page, forum, feed, wiki, profile, search engine, notification stream, app store, inbox, and dashboard can all be mimicked as familiar surface forms while their hidden platform logic is replaced by KOR-scoped authority, TXXM objecthood, deterministic rendering, braid-aware history, weakwork and hedlbit resource accounting, and forkable governance. Kapnet is therefore not post-web because it discards web forms. It is post-web because it makes those forms governable, replayable, inspectable, forkable, and timechain-legible.
+\end{abstract}
+
+\section{Scope}
+
+This document is scoped across the Kapnet ladder from host-level substrate through discourse-level civilization. It treats adjacent protocols neither as enemies nor as components automatically absorbed into Kapnet consensus. They are instead placed according to the kind of work they perform. Some are transport substrates. Some are content stores. Some are collaborative editors. Some are social membranes. Some are identity habits. Some are execution or workflow engines. Some are old web patterns whose cultural value outlived the platforms that captured them.
+
+The claim is not that Kapnet must import every protocol. The claim is that Kapnet needs a disciplined account of how surrounding protocols become legible to it. An adjacent protocol can be used as a carrier without being trusted as law. It can be used as a workshop without being treated as publication. It can be used as a social membrane without being confused for a KOR. It can be used as a source of content without being mistaken for canonical state. This distinction is essential because Kapnet's power comes from selective elevation. Not every message, file, session, edit, conversation, or model output deserves to become public Kapactivity. But when an object does deserve to become durable, governed, and replayable, Kapnet must provide a precise path by which it crosses from ordinary network activity into canonical objecthood.
+
+\section{The Encapsulation Thesis}
+
+Kapnet is best understood as an encapsulation membrane between ordinary digital activity and governed cyberphysical memory. It is not merely a message bus, not merely a social network, not merely a mesh, not merely a smart-contract layer, not merely a document system, not merely a Bitcoin side culture. It is a way of making activity into typed, scoped, replayable, renderable, economically legible, fork-aware state.
+
+Adjacent protocols enter this membrane in three different ways.
+
+First, Kapnet can ingest their outputs. A web page, screenshot, PDF, Git commit, Nostr event, CryptPad export, WhiteNoise conversation excerpt, Blossom blob, IPFS object, model checkpoint, dataset manifest, or LLM transcript may become the body of a Kapnet object. In this case, the outside protocol produced something that Kapnet receives.
+
+Second, Kapnet can wrap their live mechanisms. A Nostr relay, libk26mesh session, WhiteNoise chat, CryptPad workspace, local CRDT document, Git repository, mesh chunk store, or LLM tool session can be treated as a living source of pre-Kapnet activity. Kapnet then decides which parts of that activity are promoted into TXXM form, which remain local kapcompute, and which are ignored.
+
+Third, and most importantly, Kapnet can reimplement their pattern grammars. The web is not only content. It is a set of interaction forms: pages, links, search, feeds, profiles, forums, comments, wikis, dashboards, forms, notifications, rankings, bookmarks, app stores, blogs, newsletters, and inboxes. Kapnet can mimic these forms without reproducing their platform logic. This is where Kapactivity becomes more than archiving. It becomes civilizational affordance migration.
+
+\section{The Kapnet Ladder}
+
+Kapnet needs a vocabulary for where adjacent protocols sit. A compact ladder is useful, provided it is treated as scaffolding rather than as a substitute for explanation.
+
+\begin{Verbatim}[fontsize=\small]
+K-2  Host and device substrate
+     Hardware, operating systems, filesystems, local databases,
+     Alpine-like deployments, FIKONSOLE-style devices, GPUs, local keys.
+
+K-1  Transport and connectivity substrate
+     Bitcoin P2P, Nostr relays, libk26mesh, Tor, I2P, libp2p,
+     mDNS, DNS SRV, TCP, UDP, QUIC-like paths, private mesh sessions.
+
+K0   Local computation and replication
+     CRDT documents, append-only logs, local-first editors, WhiteNoise chats,
+     CryptPad sessions, libk26mesh logs, LLM sessions, deterministic games,
+     local kapcompute.
+
+K+1  Kapnet object boundary
+     TXXM envelopes, KScript, Kapplets, canonical schemas, capability proofs,
+     deterministic LaTeX/PDF renders, manifest roots, object hashes.
+
+K+2  Public replay and compression layer
+     Blobs, braids, knots, weakwork, hedlbit priority, KSP archives,
+     Bitcoin-clock references, cross-tip context, replayable state roots.
+
+K+3  Governance and institutional layer
+     KORs, rooms, guilds, DAOs, coordinators, research groups, zines,
+     schools, review boards, Korduel gyms, service providers.
+
+K+4  Discourse and civilization layer
+     ODL, fork culture, protocol critique, public legitimacy,
+     education, institutional memory, memetic evolution, free exit.
+\end{Verbatim}
+
+The ladder prevents a common mistake: treating all useful protocols as peers of the same kind. Bitcoin is not adjacent in the same way CryptPad is adjacent. A mesh transport is not adjacent in the same way a wiki is adjacent. A Nostr event is not adjacent in the same way a KOR constitution is adjacent. Kapnet's discipline is to place each protocol at its proper level and prevent lower-level convenience from silently becoming higher-level authority.
+
+\section{Bitcoin as Reference Physics}
+
+Bitcoin is the innermost public substrate. It gives Kapnet an objective ordering discipline that no ordinary application protocol can provide. Its contribution is not general computation. Its contribution is reference time, proof-of-work cost, monetary gravity, scarce blockspace, and a culture of adversarial verification. Kapnet should not ask Bitcoin L1 to execute Kapnet. It should treat Bitcoin as the cyberphysical clock against which rare, compressed, meaningful Kapnet commitments can be measured.
+
+Bitcoin Script and Miniscript belong near this same center because they teach restraint. Script is valuable not because it is expressive in the ordinary software sense, but because it is austere, bounded, local, and skeptical. Miniscript adds the lesson that policy should be analyzable before it is executed. KScript should inherit this seriousness even when it becomes richer than Bitcoin Script. A Kapnet node must always be able to replay an action without trusting a hidden interpreter, ambient network call, or undocumented platform state.
+
+Lightning and DLCs extend the lesson that most useful activity should not live directly on L1. Lightning demonstrates routed conditional state that periodically relates back to Bitcoin. DLCs demonstrate externally conditioned outcomes whose settlement depends on carefully scoped attestations. Kapnet generalizes these instincts. It routes not only value, but attention, authorship, governance, computation, state, publication pressure, and archival obligation. Where Lightning routes liquidity, Kapnet routes Kapactivity.
+
+\section{Nostr, WhiteNoise, and the Social Event Membrane}
+
+Nostr is close to Kapnet because it shares a taste for simple signed events, public-key identity, relay plurality, and client-side agency. But a Nostr event is not automatically a Kapnet object. It becomes Kapactive only when it gains object type, KOR scope, capability meaning, deterministic rendering, state-transition semantics, and a place in a braid or publication path.
+
+Nostr is therefore best understood as a social event membrane. It can carry pre-TXXM material. A Nostr relay can resemble a KSP relay role. A Nostr thread can become a room preform. A Nostr pubkey can identify a social actor or transport participant. But Kapnet must not confuse a pubkey with a KOR, a relay with governance, or an event with canonical state.
+
+WhiteNoise occupies a different but complementary place. It is a private conversational membrane. It is where people can deliberate before publication, where trust forms, where drafts remain drafts, and where not every utterance is forced into public memory. Kapnet should preserve that privacy gradient. A WhiteNoise conversation becomes Kapactive only when participants or governing context decide that some segment, claim, transcript, or artifact should become a submission, proposal, evidence object, or rendered record.
+
+The distinction matters because Kapnet is not a surveillance machine for turning all communication into protocol state. It is an elevation system. It must protect the right of pre-public conversation while providing a rigorous path for selected conversation to become governed output.
+
+\section{CryptPad, Documents, and Collaborative Workshops}
+
+CryptPad is not Kapnet, but it is a useful model for the collaborative workshop. People write together before they publish together. They draft, annotate, revise, rearrange, and argue inside documents. A protocol civilization that cannot accommodate this will force premature formalization and produce sterile artifacts.
+
+Kapnet should treat collaborative editors as workshops whose outputs may later be canonicalized. A CryptPad document, shared notebook, spreadsheet, kanban board, or draft constitution can become a Kapnet submission only after it is exported or otherwise represented in canonical form. That representation must then be hashed, wrapped in a TXXM envelope, scoped to a KOR or room, rendered deterministically, and placed into a braid if it is to become replayable state.
+
+The document itself is not enough. Its meaning depends on who authored it, which version is being cited, what authority admits it, how it renders, which prior object it succeeds, which body hashes it contains, and what action it causes. Kapnet does not merely store the document. It gives the document a lawful position in a governed object history.
+
+\section{Blossom, IPFS, and the Body Problem}
+
+Kapnet should be conservative about what it carries directly. Many important objects have large bodies: images, videos, PDFs, datasets, trained weights, simulation outputs, archives, and model checkpoints. A TXXM should often carry references, manifests, roots, proofs, and render commitments rather than the whole body.
+
+Blossom-like storage and IPFS-like content addressing are therefore adjacent solutions to the body problem. They show how heavy content can be named, retrieved, mirrored, and deduplicated without forcing every relay or node to carry everything. But content addressing alone does not solve Kapnet's problem. A content hash tells us which bytes are meant. It does not tell us what those bytes mean, who authorized them, what KOR admits them, how they render, what action they perform, what history they belong to, or which economic commitment backs their propagation.
+
+Kapnet extends content addressing into governed objecthood. A blob is not merely available. It is cited by a TXXM. A manifest is not merely a file tree. It is a renderable object body. A dataset is not merely bytes. It may be evidence inside a research KOR. A model checkpoint is not merely a hash. It may be an output of a training run whose logs, reviewers, permissions, and reproducibility claims are braided into a public record.
+
+\section{libk26mesh and the Local Federated Carrier}
+
+The libk26mesh design is best understood as a K-1/K0 carrier for local and small-federation kapcompute. It provides a practical substrate: Noise-secured peer sessions, trust-on-first-use, optional coordinator endorsements, content-addressed chunks, replicated append-only logs, key-value registers, file manifests, session replication, mesh mail, chat, and consented remote calls. This is not Kapnet, but it is precisely the sort of edge fabric that Kapnet needs.
+
+The important distinction is between local convergence and public epi-consensus. libk26mesh can help a lab, guild, household, field team, or research cluster exchange state under partition. Its hybrid logical clocks can order local events deterministically enough for useful replication. Its chunk store can move files. Its logs can synchronize sessions. Its mail and chat can support small-group communication. But none of that automatically produces KOR law, TXXM objecthood, deterministic rendering, hedlbit or weakwork pricing, braid compression, knot claims, Bitcoin-time context, or fork-aware public replay.
+
+Kapnet should absorb libk26mesh-like systems as carrier profiles. A carrier profile should provide authenticated peer sessions, content-addressed body movement, append-only local logs, bounded resource behavior, offline partition recovery, local discovery, and optional endorsements. Above that, Kapnet adds the canonical layer: TXXM envelopes, object schemas, KOR scope, deterministic render, capability proofs, publication rules, braid aggregation, knot compression, and rare anchoring to Bitcoin blocktime.
+
+This lets Kapnet avoid a false binary. It does not need to choose between global protocol state and private local software. It can let activity begin in private or federated kapcompute and later cross into canonical Kapactivity only when the object deserves it.
+
+\section{Git, CRDTs, Hypercore, and Local-First State}
+
+Git matters because it taught network culture that forks are not necessarily failures. A repository can branch, diverge, merge, and carry authored history without asking a central platform for permission. Kapnet generalizes that lesson beyond code. A submission can fork. A room can fork. A KOR can fork. A constitution can fork. A publication lineage can fork. Forkability is not an afterthought; it is one of the conditions of legitimate exit.
+
+CRDTs and local-first systems provide another essential lesson: users should be able to act while disconnected. Their devices should remain useful without constant permission from a server. Divergent state should be able to reconcile. But CRDT convergence is mechanical, not constitutional. It can tell us how edits merge. It cannot tell us whether a KOR accepts the merged document, whether a reviewer has approved it, whether a room admits it, whether a fork is legitimate, or whether a publication deserves hedlbit-backed routing.
+
+Hypercore-like append-only feeds sit between these worlds. They provide replicated logs and Merkle proofs, but they do not by themselves define the social law of the objects they carry. Kapnet's braid is not just an append-only feed. It is a governed event history. Its contents are typed, scoped, priced, rendered, and interpreted under KOR law.
+
+\section{Matrix, ActivityPub, Email, and Federated Social Precedents}
+
+Matrix, ActivityPub, and email all demonstrate that federation is culturally powerful and technically difficult. Matrix shows room-state federation, encrypted communication, bridging, and event histories, but it also warns of state-resolution complexity, operational weight, moderation difficulty, and semantic sprawl. ActivityPub shows actors, inboxes, outboxes, social federation, and instance-level moderation, but it does not provide Kapnet's stronger object law. Email shows asynchronous interoperability and institutional durability, but also spam, phishing, fragile authentication layering, and provider capture.
+
+Kapnet should learn from all three without becoming any of them. A Kapnet room is not merely a chat room. It is a governed object environment. A Kapnet actor is not merely a social account. It may be a person, device, KOR, submission, archive provider, room, guild, or capability-bearing object. A Kapnet inbox is not merely a mailbox. It can be a scoped receiving surface whose incoming objects have costs, proofs, render forms, and governance consequences.
+
+The old federated systems often made communication possible while leaving legitimacy vague. Kapnet must make communication, legitimacy, and replayability part of the same object grammar.
+
+\section{Identity, Pubky, Tor, I2P, and Capability Layers}
+
+Identity is not one thing in Kapnet. A person key, device key, transport key, node key, author key, KOR key, room key, submission key, endorsement key, archive key, and capability key may all coexist. Systems like Pubky contribute useful instincts around user-owned identity and portable addressing. Tor and I2P contribute privacy transport and endpoint protection. But Kapnet must not collapse identity into either addressability or anonymity.
+
+A transport identity answers who can open this channel. A social identity answers who is speaking. A KOR identity answers which governed object has authority. A capability identity answers what this actor may do. A submission identity answers what exact object is under discussion. An archive identity answers who promises to serve the body. These identities may overlap, but they should not be silently merged.
+
+This separation is one of Kapnet's defenses against platform capture. A platform account collapses many roles into one provider-controlled credential. Kapnet should separate them so that authority, authorship, availability, privacy, and governance can be rearranged without destroying the user or the object.
+
+\section{Braidpool, Knupool, Weakwork, and Utility Hashflow}
+
+Mining-pool protocols and Braidpool-like designs are adjacent because they show how distributed work can be measured, shared, and rewarded below the final event of block discovery. Kapnet's Knupool direction extends this into utility hashwork. Shares can arrive faster than base blocks. Work can be divided by refresh-rate bands. Sub-difficulty proofs can be priced for routing, template attention, blob freshness, service availability, and publication priority.
+
+This is central to Kapnet's economic distinctiveness. Not every useful proof of work needs to win a Bitcoin block. Some proof of work can buy lower-level scarce resources: attention, bandwidth, relay priority, update cadence, anti-spam credibility, or inclusion preference. Weakwork is therefore not fake mining. It is a way of giving sub-block computational effort a protocol role without pretending it has Bitcoin's finality.
+
+Kapnet should treat weakwork as one side of resource seriousness and hedlbit as another. Weakwork expresses fresh thermodynamic effort. Hedlbit expresses time-weighted prior commitment. KOR law decides how these resource signals matter in a given room, guild, publication path, or service market.
+
+\section{Utreexo, Accumulators, and Light Verification}
+
+Kapnet cannot require every node to store every object, body, revision, room, guild, braid, archive, and historical proof. Utreexo-like accumulator thinking is therefore adjacent at the level of state compression. It teaches that large sets can be represented compactly while still allowing selected membership proofs.
+
+Kapnet needs accumulator-like structures for KOR member sets, capability sets, revocation sets, archive promises, braid inclusion, submission indexes, cross-tip references, and knot ancestry. Light clients should be able to verify selected state without becoming full archives. Archive providers should serve heavy history without becoming authorities over interpretation. KSPs should accelerate access without defining truth.
+
+The database or accumulator is not the law. The canonical bytes, object schema, KOR rule, render root, braid proof, knot claim, and Bitcoin-time context define the law. Indexes and accumulators make that law usable at scale.
+
+\section{Restate, Deterministic Games, CAP, and Composable Execution}
+
+Kapnet workflows are rarely single events. A proposal may be drafted, signed, reviewed, challenged, revised, weakworked, included, braided, rendered, archived, and eventually knotted. Restate-like durable workflow systems are adjacent because they show how long-running processes can recover after failure. Kapnet should not depend on one such engine, but KScript and Kapplets should learn from durable execution, idempotence, replay, and recoverable progress.
+
+Deterministic game engines such as boardgame-style state machines are adjacent for a different reason. They show how moves, turns, legal actions, hidden state, public state, match logs, and replay can be modeled precisely. Korduel makes this more than a metaphor. A Kapnet room can host bounded challenge engines where actions are typed, outcomes are replayable, and accumulated W changes privileges or progression paths according to rule law. This pattern is not limited to games. It applies to educational drills, peer review, bracketed deliberation, research challenges, artistic competitions, and governance simulations.
+
+CAP-like categorical software grammar belongs at the formal edge of Kapnet. If a DAO can exist where a datatype would ordinarily exist, Kapnet needs rigorous composition. Submissions, rooms, guilds, KORs, braids, knots, renders, forks, and transformations require a mathematical language of objects, morphisms, contexts, inheritance, and structure-preserving mappings. Without this, ``DAO as the only data type'' remains evocative but under-specified. With it, Kapnet can become a compositional object system rather than a pile of governance metaphors.
+
+\section{The Web as Pattern Language}
+
+The missing synthesis is that Kapnet does not only ingest the web. It can mimic the web outside the web. This mimicry is not screenshotting, scraping, archiving, or exporting. Those are only ingestion strategies. The deeper move is to emulate the algorithms, habits, and patterns of the old web in Kapactive form.
+
+The web is made of cultural forms as much as technical protocols. A page is a stable surface. A link is a directed reference. A feed is a changing projection. A search engine is a ranked retrieval ritual. A profile is a person-shaped display object. A forum is a public threaded room. A wiki is a communal knowledge surface. A comment section is attached discourse. A bookmark is personal memory. A dashboard is state made visible. An app store is a registry of executable affordances. A notification is a claim on attention. A recommendation system is an attention allocator masquerading as convenience.
+
+Kapnet can keep these forms while changing the underlying verbs. A web page becomes a rendered submission or canonical TXXM surface. A website becomes a KOR-governed namespace or room cluster. A forum becomes a room with replychains, validation, moderation, and precipitation thresholds. A wiki becomes a forkable KOR knowledge corpus. A feed becomes a braid projection under an explicit policy. A search engine becomes a retrieval surface whose corpus, ranking law, and authority are inspectable. An algorithmic timeline becomes a declared attention function rather than an opaque platform decision. A profile becomes a rendered identity object with proofs, affiliations, claims, submissions, delegations, and publication history.
+
+This is not a nostalgic skin. It is interface archaeology plus protocol transmutation. Kapnet preserves the parts of the web that users understand while replacing the hidden capture mechanisms. The old web often turned interface actions into opaque platform events. A Kapactive interface should make the action's scope, authority, cost, consequence, and render visible.
+
+The ordinary web button says, in effect, trust the platform. The Kapactive button says: construct this typed action, under this KOR, with this authorization, at this cost, producing this object transition, visible in this render, and appealable or forkable under this law.
+
+\section{From Web Verbs to Kapactive Verbs}
+
+The old web taught people a vocabulary of action. Kapnet should not discard that vocabulary. It should clarify what those actions really do.
+
+\begin{Verbatim}[fontsize=\small]
+click      -> inspect or invoke a scoped object
+post       -> submit a TXXM candidate
+like       -> emit a weighted signal, reaction, or validation
+share      -> reference, fork, mirror, route, or cite
+follow     -> subscribe to a braid, room, KOR, identity, or policy
+search     -> query a corpus under a declared retrieval law
+rank       -> apply an explicit attention function
+moderate   -> execute a KOR-authorized state transition
+publish    -> precipitate or braid an object into durable memory
+archive    -> bind body, render, proof, and availability into state
+edit       -> propose a successor object
+delete     -> tombstone, retract, hide, or fork away under declared law
+notify     -> issue a scoped claim on attention
+recommend  -> apply a visible and forkable selection policy
+embed      -> include a referenced object with its render and proof context
+\end{Verbatim}
+
+This translation is one of Kapnet's most important cultural moves. It does not force users to learn an entirely alien interface world. It lets familiar actions survive, but it strips them of ambiguity. Posting is no longer dumping content into a platform database. It is proposing an object. Sharing is no longer merely amplifying a URL. It is choosing a kind of reference relation. Moderation is no longer hidden administrative deletion. It is a governed state transition. Recommendation is no longer a black box. It is a policy that can be examined, forked, criticized, replaced, or specialized.
+
+\section{Kapactive Media}
+
+Kapactive media is not merely interactive media. Interactive media responds to a user. Social media circulates among users. Kapactive media is created, consumed, modified, governed, and remembered within KOR-bound contexts. It is media whose life is shaped by rooms, guilds, submissions, replychains, validation, precipitation, rendering, and replay.
+
+A Kapactive artifact is therefore not only viewed. It participates. A zine issue, research note, debate thread, model card, lesson, Korduel match, manuscript draft, dataset, review, or governance proposal can all become Kapactive when its objecthood is explicit. The artifact has a body, scope, authorship membrane, state history, render form, governance context, and path for continuation.
+
+This is where Kapnet's mimicry of the web becomes more than interface modernization. A web forum hosts discussion. A Kapactive room turns discussion into a structured object ecology. A web wiki hosts pages. A Kapactive knowledge KOR turns pages into forkable, reviewable, renderable, governed claims. A web feed streams content. A Kapactive feed exposes the policy by which attention is organized. A web profile displays identity. A Kapactive profile displays an identity object with proofs, roles, delegations, and authored histories.
+
+Kapactive media is media that knows where it belongs.
+
+\section{The Role of TXXM}
+
+TXXM is the crossing point. Before TXXM, an event may be useful, private, temporary, local, or informal. After TXXM, an event has entered Kapnet's object grammar. It has a canonical envelope. It can declare its type, scope, body references, authorship, capability proofs, render commitments, economic signals, and relationship to prior state.
+
+This does not mean every TXXM must be public or expensive. There can be local, private, draft, and zero-cost contexts. But the TXXM boundary means the object has become replayable according to declared rules. It is no longer just an application event. It is a Kapnet event.
+
+The most important requirement is deterministic rendering. A Kapnet object must not only be hashable by machines. It must be legible to humans and future reviewers in a stable form. A deterministic LaTeX/PDF render is therefore not decoration. It is part of the object's civic reality. It lets a TXXM carry both machine state and human-facing meaning. It lets disputes refer to what was actually shown. It lets archives preserve not only bytes, but presentation context.
+
+\section{KOR as the Authority Membrane}
+
+KOR is the authority membrane that prevents Kapnet from becoming a mere data structure network. It answers the questions that content addressing and transport cannot answer. Who may submit? Who may revise? Who may moderate? Who may fork? Who may merge? Who may archive? Who may execute? Which proofs count? Which weights matter? Which renders are canonical? Which objections are valid? Which thresholds precipitate publication?
+
+Adjacent protocols often smuggle these answers into platforms, administrators, maintainers, servers, or implicit social norms. Kapnet should make them explicit. A KOR is not merely a group. It is a governed object context. It can own rooms, define submission types, admit capabilities, set validation thresholds, price scarce surfaces, recognize archives, endorse coordinators, and define how its own law changes.
+
+This is why a coordinator in a mesh is not yet a KOR. A coordinator can endorse keys. A KOR can define the meaning of endorsement, the appeal path for revocation, the scope of authority, the inheritance of capability, the publication consequences, and the fork conditions if trust breaks.
+
+\section{Braids, Knots, and Public Memory}
+
+Braids and knots are the difference between replicated activity and Kapnet memory. A replicated log can converge among peers. A braid makes selected events into a typed, governed history. A knot compresses, checkpoints, and remembers that history in a way that can be cited, challenged, archived, and related to Bitcoin blocktime.
+
+This gives Kapnet a path between ordinary computation and public legitimacy. A local mesh may carry a research session. A collaborative editor may produce a manuscript. A WhiteNoise group may discuss revisions. A Nostr event may announce a draft. A Blossom server may host images. A Git repository may track source changes. None of these alone defines the final Kapnet object. The braid is where the governed history is assembled. The knot is where it becomes difficult to ignore.
+
+Kapnet's public memory should be scarce enough to matter and flexible enough to admit many kinds of objects. It should not turn every packet into history. It should turn worthy, scoped, rendered, and governed objects into memory.
+
+\section{A Unified Encapsulation Schema}
+
+The following compact schema is useful because it shows the relative roles without pretending that every system belongs to the same category.
+
+\begin{Verbatim}[fontsize=\small]
+Bitcoin            reference clock, PoW ordering, monetary gravity
+Bitcoin Script     bounded verification ancestor
+Miniscript         analyzable policy grammar
+Lightning          off-chain conditional routing precedent
+DLCs               oracle-conditioned execution precedent
+
+Nostr              signed social event membrane
+WhiteNoise         private conversation membrane
+CryptPad           collaborative document workshop
+Blossom            media and blob body hosting
+Pubky              self-sovereign addressability instinct
+libk26mesh         local/federated encrypted carrier
+IPFS               content-addressed retrieval lesson
+SSB                append-only social log ancestry
+Matrix             federated room/event lesson and warning
+ActivityPub        social federation precedent
+Email              asynchronous federated message precedent
+
+Git                fork, branch, merge, authored history
+CRDTs              local-first convergence machinery
+Hypercore/Dat      append-only replicated feed machinery
+libp2p             modular peer-to-peer mechanism suite
+Tor/I2P            privacy transport substrate
+
+Braidpool          decentralized share-accounting inspiration
+Knupool            Kapnet weakwork utility-pool direction
+Utreexo            accumulator and state-compression precedent
+Restate            durable workflow recovery model
+boardgame engines  deterministic rule-state execution model
+CAP                categorical composition grammar
+
+Web patterns       page, forum, feed, search, profile, wiki, dashboard
+LLM sessions       Kapactive transcript, tool trace, artifact source
+\end{Verbatim}
+
+This schema is not a shopping list. It is a placement map. Kapnet can use these systems without surrendering to them. It can imitate their successful affordances without inheriting their hidden capture points. It can receive their outputs without confusing those outputs for Kapnet state. It can wrap their mechanisms without pretending their mechanisms are law.
+
+\section{The Post-Web Claim}
+
+Kapnet is post-web only in a precise sense. It is not post-web because it abandons pages, links, profiles, comments, feeds, search, dashboards, forums, or collaborative documents. Those forms are too useful to discard. Kapnet is post-web because it refuses the old bargain in which platforms provided convenience in exchange for opacity, capture, behavioral extraction, unforkable identity, and hidden ranking authority.
+
+The post-web move is to retain familiar affordances while relocating authority. The page is no longer platform-hosted content. It is a rendered object. The feed is no longer an opaque behavioral product. It is a declared braid projection. The profile is no longer an account page. It is an identity render. The search engine is no longer a private ranking oracle. It is a scoped retrieval policy. The forum is no longer a server-owned discussion board. It is a room with visible governance. The app store is no longer a platform gate. It is a Kapplet registry under KOR review.
+
+This lets Kapnet meet users where they are while changing what the interface means. It is not enough for a Kapnet interface to look like the web. It must behave with Kapnet semantics underneath. Otherwise it is merely another skin on platform logic.
+
+\section{Conclusion}
+
+Kapnet's adjacent protocol ecology should be read as a ladder of encapsulation rather than a set of integrations. Bitcoin supplies the reference physics. Transport systems move messages. Meshes replicate local state. Editors and chats host pre-public collaboration. Content-addressed stores carry bodies. Social protocols circulate events. Identity systems address actors. Workflow engines recover long processes. Game engines model deterministic rule spaces. Web patterns provide familiar affordances. LLM sessions generate Kapactive material.
+
+Kapnet's task is to decide when and how any of this becomes a governed object.
+
+The decisive transformation is not storage, not encryption, not replication, not federation, not content addressing, and not interface familiarity. Those are necessary but insufficient. The decisive transformation is the crossing into TXXM objecthood under KOR scope, with deterministic render, capability context, economic posture, replayable history, and an intelligible path toward braid and knot memory.
+
+Kapnet therefore does not replace the web by erasing it. It metabolizes the web. It does not replace adjacent protocols by swallowing them whole. It encapsulates them according to level, purpose, and consequence. It does not make every activity public. It gives activity a gradient: private work, local kapcompute, federated replication, canonical objecthood, public braid, knot memory, and timechain legibility.
+
+That is the heart of the synthesis. Kapnet is the membrane by which ordinary digital activity becomes cyberphysical discourse: authored, scoped, priced, rendered, governed, replayable, forkable, and remembered.
+\end{document}

@@ -1,0 +1,402 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                               K A P N E T                                  ║
+║                    recursive coordination data machine                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+[ GLYPH SET ]
+
+  •   atomic state cell / witness / KapActivity unit
+  ◌   node / member / agent membrane
+  ▭   bounded DAO-shaped object
+  ⟐   TXXM mutation packet
+  ⟡   candidate braid junction
+  ▣   knot / accepted checkpoint
+  ⊞   recursive state lattice
+
+  →   mutate / derive / submit
+  ↝   relay / reveal / observe
+  ⤴   append into candidate history
+  ⤢   fork / alternative continuation
+  ⤓   checkpoint / crystallize
+  ⋈   relation / membership tie
+  ≈   same form at another scale
+  ⊂   recursive containment
+
+  [ ] typed schema / state context
+  ( ) local context / soft scope
+  { } peer cluster / federation / grouped surface
+  | | membrane / policy filter / secrecy boundary
+
+  * signed / witnessed / active
+  # hashed / committed
+  ~ visible / relayed / candidate
+  ′ transformed / updated
+
+
+════════════════════════════════════════════════════════════════════════════════
+  1. CORE LAWS
+════════════════════════════════════════════════════════════════════════════════
+
+  institution := ▭
+
+  DAO := [▭ : rules ⋈ members ⋈ relations ⋈ mutations]
+
+  submission ≈ ▭
+  room       ≈ ▭
+  guild      ≈ ▭
+  member     ≈ ▭
+  federation ≈ ▭
+
+  • ⊂ ▭
+  ▭ ⊂ {▭}
+  {▭} ⊂ {{▭}}
+
+  ⟐ := [h + c + w + k]
+
+  ⟐* → ▭′
+
+  ⟐ + ⟐ + ⟐ → ⟡
+
+  ⟡₁ ⤢ ⟡₂ ⤢ ⟡₃
+
+  ⟡* ⤓ ▣ₙ
+
+  ▣ₙ → ⊞′
+
+  ◌(s,p,v,r,q) → ⟐
+
+  sync(▣) + fetch(•) + source(q) + score(⟡ᵢ) + append(⟐,⟡ᵢ)
+
+
+════════════════════════════════════════════════════════════════════════════════
+  2. KAPNET IN ONE LINE
+════════════════════════════════════════════════════════════════════════════════
+
+  • → ▭ → ⟐ → ⟡ → ▣ → ⊞′
+
+  ◌(s,p,v,r,q) → ⟐ ⤴ ⟡ ; ⟡* ⤓ ▣ ; ▣ → ⊞′ , P′
+
+
+════════════════════════════════════════════════════════════════════════════════
+  3. ONTOLOGY / RECURSION
+════════════════════════════════════════════════════════════════════════════════
+
+  ▭₀ ≈ ▭₁ ≈ ▭₂ ≈ ▭₃
+
+  where:
+
+    ▭₀ = submission
+    ▭₁ = room
+    ▭₂ = guild
+    ▭₃ = federation
+
+  recursive view:
+
+    • ⊂ ▭submission
+    ▭submission ⊂ {▭room}
+    {▭room} ⊂ {{▭guild}}
+    {{▭guild}} ⊂ {{{▭federation}}}
+
+  relational view:
+
+    contained ▭  = submission relative to container
+    containing ▭ = room relative to contents
+
+
+════════════════════════════════════════════════════════════════════════════════
+  4. TXXM / PAYLOAD
+════════════════════════════════════════════════════════════════════════════════
+
+  ⟐ := [h + c + w + k]
+
+    h = btc header anchor
+    c = weakwork claim
+    w = weakwork-signed metadata
+    k = KapActivity mutation body
+
+  expanded:
+
+    ⟐_n
+      #payload : h#...
+      size     : ...
+      payload  : [h + c + w + k]
+
+  payload logic:
+
+    h  → anchor to Bitcoin header reality
+    c  → prove weakwork-linked admissibility
+    w  → carry witness / routing / validation metadata
+    k  → mutate native Kapnet state and DAO-shaped objects
+
+
+════════════════════════════════════════════════════════════════════════════════
+  5. KAPACTIVITY / STATE
+════════════════════════════════════════════════════════════════════════════════
+
+  •ₖ := KapActivity cell
+
+  hedlbit := base native accounting / fuel unit
+
+  mutation surface:
+
+    ⟐ → •ₖ′
+    ⟐ → ▭′
+    ⟐ → ⊞′
+
+  meaning:
+
+    a packet can mutate:
+      - native accounting cells
+      - bounded DAO-shaped objects
+      - recursive committed state
+
+
+════════════════════════════════════════════════════════════════════════════════
+  6. BRAID / KNOT
+════════════════════════════════════════════════════════════════════════════════
+
+  candidate field:
+
+    ⟐₁ + ⟐₂ + ⟐₃ → ⟡
+
+  contested continuation:
+
+        ⟡ₐ
+       /  \
+     ⟡ᵦ    ⟡𝒸
+      |      \
+     ⟡𝒹      ⟡ₑ
+
+  fork plurality:
+
+    ⟡₁ ⤢ ⟡₂ ⤢ ⟡₃
+
+  crystallization:
+
+    ⟡* ⤓ ▣ₙ
+
+  replay:
+
+    ▣ₙ → ⊞′
+
+  interpretation:
+
+    candidate history is meaningful before checkpoint
+    knot is reduction of ambiguity, not origin of reality
+
+
+════════════════════════════════════════════════════════════════════════════════
+  7. NODE / MEMBRANE
+════════════════════════════════════════════════════════════════════════════════
+
+  simple form:
+
+    | ◌ |
+
+  expanded:
+
+    | {keys creds policy delegates} ◌ {tip knots braids roots} |
+
+  compositional agency:
+
+    ◌(s,p,v,r,q) → ⟐
+
+    s = secrets
+    p = public tip state
+    v = provider lookups
+    r = relay subnet awareness
+    q = weakwork capacity
+
+  node law:
+
+    a node is a programmable membrane between hidden capability
+    and visible coordination
+
+
+════════════════════════════════════════════════════════════════════════════════
+  8. CLIENT LOOP
+════════════════════════════════════════════════════════════════════════════════
+
+  sync(▣)
+    + fetch(•)
+    + source(q)
+    + score(⟡ᵢ)
+    + append(⟐,⟡ᵢ)
+
+  operational loop:
+
+    sync knots
+      ↓
+    resolve dependencies
+      ↓
+    fetch raw activity / witnesses
+      ↓
+    source weakwork
+      ↓
+    observe candidate braids
+      ↓
+    score likely next-knot surfaces
+      ↓
+    build ⟐
+      ↓
+    append to ⟡ᵢ
+      ↓
+    observe next ▣
+      ↓
+    replay to ⊞′
+
+
+════════════════════════════════════════════════════════════════════════════════
+  9. CLI DASHBOARD
+════════════════════════════════════════════════════════════════════════════════
+
+kapnet> status
+
+  TIP
+    btc.hdr        : h#9f21...
+    knot           : ▣_1842
+    braid.live     : ⟡_a  ⟡_b  ⟡_c
+    root           : ⊞#7ac1...
+
+  SELF
+    node           : ◌_me
+    weakwork       : q=184.22
+    policy         : [relay=dao/* archive=dep/* append=score-max]
+    secrets        : |keys creds delegates|
+
+  HORIZON
+    subscribed     : {▭guild.alpha ▭room.delta ▭market.beta}
+    dependencies   : {▭archive.core ▭relay.mesh ▭witness.gamma}
+    raw.activity   : • 14,282 retained
+    missing        : • 42
+
+  BRAID
+    ⟡_a            : weight=188  growth=+7  deps=ok      p(next▣)=0.62
+    ⟡_b            : weight=171  growth=+11 deps=ok      p(next▣)=0.29
+    ⟡_c            : weight=96   growth=+2  deps=partial p(next▣)=0.09
+
+  ACTION
+    build          : ⟐[h+c+w+k]
+    target         : ⟡_a
+    append         : ready
+
+
+════════════════════════════════════════════════════════════════════════════════
+  10. DAO TREE
+════════════════════════════════════════════════════════════════════════════════
+
+kapnet> dao tree --focus guild.alpha
+
+  {{▭ federation}}
+   └─ {▭ guild.alpha}
+       ├─ {▭ room.delta}
+       │   ├─ ▭ submission.7ab2
+       │   ├─ ▭ submission.9c11
+       │   ├─ ◌ member.josie
+       │   └─ ◌ agent.routebot
+       ├─ {▭ room.research}
+       │   ├─ ▭ submission.f021
+       │   └─ ◌ member.peerA
+       └─ {▭ archive.local}
+           ├─ • raw.kapactivity[124]
+           └─ • witness.blob[19]
+
+
+════════════════════════════════════════════════════════════════════════════════
+  11. TXXM INSPECT
+════════════════════════════════════════════════════════════════════════════════
+
+kapnet> inspect txxm 7ab2
+
+  ⟐_7ab2
+    #payload       : 9da1...
+    size           : 1428
+    payload        : [h + c + w + k]
+
+    h              : btc_header#000000...
+    c              : wwclaim{xorlottery}
+    w              : wwsigned[3]
+    k              : kapactivity
+
+    k.target       : ▭ room.delta
+    k.delta        : membership⋈ relation⋈ rule′
+    k.script       : K*
+    k.deps         : {▭archive.core ▭witness.gamma}
+
+
+════════════════════════════════════════════════════════════════════════════════
+  12. GUI PANEL
+════════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ KAPNET                                                                     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ SELF      ◌_me         q=184.22        ▣_1842        ⊞#7ac1...             │
+│                                                                             │
+│ MEMBRANE  | keys | creds | policy |      | tip | braids | deps |          │
+│                                                                             │
+│ OBJECTS   • → ▭ → {▭ ▭} → {{▭}}                                            │
+│                                                                             │
+│ FLOW      ⟐ + ⟐ + ⟐ → ⟡_a ⤢ ⟡_b ⤢ ⟡_c                                      │
+│           ⟡_a* ⤓ ▣_1843                                                     │
+│                                                                             │
+│ REPLAY    ▣ → ⊞′                                                            │
+│                                                                             │
+│ APPEND    target=⟡_a   score=0.62   packet=⟐[h+c+w+k]                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+  13. PROSE MODE
+════════════════════════════════════════════════════════════════════════════════
+
+  A ◌ never acts from s alone.
+  A ◌ acts from (s + p + v + r + q).
+
+  A ▭ is not merely a container.
+  A ▭ is a mutable bounded institution-form.
+
+  A ⟐ is not merely a message.
+  A ⟐ is an admissible mutation of ▭ and •.
+
+  A ~⟡ is not noise.
+  A ~⟡ is candidate history under contest.
+
+  A ▣ is not the start of truth.
+  A ▣ is checkpointed reduction of ambiguity.
+
+  A ⊞ is not flat state.
+  A ⊞ is recursive committed coordination memory.
+
+  Thus:
+
+    ◌(s,p,v,r,q) → ⟐
+    ⟐ + ⟐ + ⟐ → ⟡
+    ⟡* ⤓ ▣
+    ▣ → ⊞′
+
+
+════════════════════════════════════════════════════════════════════════════════
+  14. CANONICAL COMPRESSIONS
+════════════════════════════════════════════════════════════════════════════════
+
+  institution := ▭
+
+  DAO := [▭ : rules ⋈ members ⋈ relations ⋈ mutations]
+
+  ⟐ := [h + c + w + k]
+
+  ⟐* → ▭′
+
+  ⟐ + ⟐ + ⟐ → ⟡
+
+  ⟡* ⤓ ▣
+
+  ▣ → ⊞′
+
+  ◌(s,p,v,r,q) → ⟐
+
+  • ⊂ ▭ ;  ▭ ≈ room ≈ guild ≈ federation ;
+  ◌(s,p,v,r,q) → ⟐[h+c+w+k] ;
+  ⟐ ⤴ ⟡ ;  ⟡* ⤓ ▣ ;  ▣ → ⊞′ , P′

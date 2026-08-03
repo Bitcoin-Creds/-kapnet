@@ -1,0 +1,453 @@
+@startuml
+title Bitcoin Primitives, Sub-Protocols, and Layers
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam ArrowColor black
+skinparam DefaultTextAlignment left
+
+package "0. Mathematical / Cryptographic Foundations" {
+  class SHA256
+  class DoubleSHA256
+  class RIPEMD160
+  class Secp256k1
+  class Schnorr
+  class ECDSA
+  class MerkleTree
+  class HashPreimage
+  class DigitalSignature
+  class TimelockMath
+  class DifficultyRetarget
+  class ProofOfWork
+}
+
+package "1. Consensus-Native Ledger Primitives" {
+  class BlockHeader {
+    version
+    prev_block
+    merkle_root
+    time
+    nBits
+    nonce
+  }
+
+  class Block {
+    txs[]
+    witness_commitment?
+  }
+
+  class Transaction {
+    version
+    vin[]
+    vout[]
+    locktime
+  }
+
+  class TxInput {
+    prevout
+    scriptSig
+    sequence
+    witness?
+  }
+
+  class TxOutput {
+    value
+    scriptPubKey
+  }
+
+  class OutPoint
+  class UTXO
+  class CoinbaseTx
+  class ChainTip
+  class Mempool
+  class FeeRate
+  class WeightUnits
+  class VirtualBytes
+  class Script
+  class ScriptPubKey
+  class ScriptSig
+  class WitnessStack
+  class Locktime
+  class Sequence
+  class MTP
+}
+
+package "2. Script / Spending Condition Layer" {
+  class ScriptVM
+  class Stack
+  class Opcodes
+  class P2PK
+  class P2PKH
+  class P2SH
+  class BareMultisig
+  class OP_RETURN
+  class CLTV
+  class CSV
+  class SegWitV0
+  class Taproot
+  class Tapscript
+  class KeyPathSpend
+  class ScriptPathSpend
+  class Annex
+  class ControlBlock
+  class MAST
+}
+
+package "3. Address / Commitment Encodings" {
+  class Base58Check
+  class Bech32
+  class Bech32m
+  class WIF
+  class XOnlyPubKey
+  class ExtendedPubKey
+  class ExtendedPrivKey
+  class BIP32Path
+  class Descriptor
+  class Miniscript
+}
+
+package "4. Wallet / Key Management / Policy Layer" {
+  class Wallet
+  class HDWallet
+  class SeedPhrase
+  class BIP39Seed
+  class MasterKey
+  class Account
+  class CoinSelection
+  class ChangeOutput
+  class PSBT
+  class Signer
+  class HardwareWallet
+  class OutputDescriptorWallet
+  class WatchOnlyWallet
+  class SpendingPolicy
+}
+
+package "5. Node / Validation / Relay Layer" {
+  class FullNode
+  class ArchivalNode
+  class PrunedNode
+  class MiningNode
+  class RelayPolicy
+  class ConsensusRules
+  class StandardnessRules
+  class BlockValidation
+  class TxValidation
+  class UTXOSet
+  class Chainstate
+  class Reorg
+  class FeeEstimation
+  class AddrRelay
+  class InvGetData
+  class HeadersFirstSync
+  class CompactBlocks
+  class MempoolPolicy
+}
+
+package "6. P2P Networking Layer" {
+  class P2PTransport
+  class VersionHandshake
+  class Peer
+  class PeerDiscovery
+  class DNSSeeds
+  class AddrMessages
+  class InvMessages
+  class GetDataMessages
+  class TxRelay
+  class BlockRelay
+  class HeaderRelay
+  class BIP324Transport
+  class EncryptionSession
+  class TorI2P
+}
+
+package "7. Mining / Time / Issuance Layer" {
+  class Miner
+  class MiningTemplate
+  class BlockAssembler
+  class CoinbaseCommitments
+  class Subsidy
+  class Fees
+  class Halving
+  class Timestamp
+  class DifficultyEpoch
+  class Target
+  class NonceSearch
+  class ExtraNonce
+  class Stratum
+  class Pool
+}
+
+package "8. Timechain State Transitions" {
+  class GenesisBlock
+  class BestChain
+  class Fork
+  class SoftFork
+  class HardFork
+  class Activation
+  class BuriedDeployment
+  class VersionBits
+  class UASF
+  class RollbackWindow
+  class FinalityEconomic
+}
+
+package "9. Canonical Bitcoin Upgrade / Spec Sub-Protocols" {
+  class BIP16_P2SH
+  class BIP32_HD
+  class BIP39_Mnemonic
+  class BIP43_Purpose
+  class BIP44_MultAccount
+  class BIP65_CLTV
+  class BIP68_Sequence
+  class BIP112_CSV
+  class BIP141_SegWit
+  class BIP143_SegWitDigest
+  class BIP157_158_Neutrino
+  class BIP173_Bech32
+  class BIP174_PSBT
+  class BIP340_Schnorr
+  class BIP341_Taproot
+  class BIP342_Tapscript
+  class BIP324_v2Transport
+}
+
+package "10. Channel / Contract / Higher-Level Bitcoin-Native Protocols" {
+  class PaymentChannel
+  class LightningNetwork
+  class CommitmentTx
+  class HTLC
+  class PTLC
+  class ChannelFactory
+  class Watchtower
+  class DLC
+  class OracleSignature
+  class Ark
+  class Fedimint
+  class ChaumianEcash
+  class CoinJoin
+  class PayJoin
+  class Statechain
+  class Sidechain
+  class DrivechainConcept
+  class CovenantsResearch
+}
+
+package "11. Data / Indexing / Client Access Layer" {
+  class RPC
+  class ZMQ
+  class Indexer
+  class Explorer
+  class ElectrumProtocol
+  class NeutrinoClient
+  class WalletAPI
+  class BlockFilter
+  class TxIndex
+  class AddressIndex
+}
+
+package "12. Meta / Overlay / Application Layer" {
+  class Timestamping
+  class ProofOfReserves
+  class OpenAssetsLikeProtocols
+  class ColoredCoins
+  class Ordinals
+  class Inscriptions
+  class Runes
+  class RGB
+  class NostrAnchoring
+  class ExternalRollupAnchors
+  class MergeMinedOverlay
+  class KapnetLikeOverlay
+}
+
+' Foundations
+DoubleSHA256 --> SHA256
+DigitalSignature --> Secp256k1
+ECDSA --> Secp256k1
+Schnorr --> Secp256k1
+MerkleTree --> DoubleSHA256
+ProofOfWork --> DoubleSHA256
+ProofOfWork --> DifficultyRetarget
+TimelockMath --> Locktime
+TimelockMath --> Sequence
+
+' Ledger composition
+Block --> BlockHeader
+Block --> Transaction
+Transaction --> TxInput
+Transaction --> TxOutput
+TxInput --> OutPoint
+TxInput --> ScriptSig
+TxInput --> WitnessStack
+TxOutput --> ScriptPubKey
+UTXO --> TxOutput
+CoinbaseTx --|> Transaction
+
+' Script layer
+ScriptVM --> Script
+ScriptVM --> Stack
+ScriptVM --> Opcodes
+P2PKH --> ScriptPubKey
+P2SH --> ScriptPubKey
+BareMultisig --> ScriptPubKey
+OP_RETURN --> ScriptPubKey
+CLTV --> Opcodes
+CSV --> Opcodes
+SegWitV0 --> WitnessStack
+Taproot --> XOnlyPubKey
+Taproot --> Tapscript
+Tapscript --> ScriptPathSpend
+Taproot --> KeyPathSpend
+Taproot --> ControlBlock
+MAST --> MerkleTree
+
+' Encodings and wallet
+Base58Check --> P2PKH
+Base58Check --> P2SH
+Bech32 --> SegWitV0
+Bech32m --> Taproot
+Descriptor --> ScriptPubKey
+Descriptor --> Miniscript
+HDWallet --> Wallet
+HDWallet --> MasterKey
+MasterKey --> BIP39Seed
+SeedPhrase --> BIP39Seed
+ExtendedPubKey --> BIP32Path
+ExtendedPrivKey --> BIP32Path
+PSBT --> Transaction
+PSBT --> Signer
+HardwareWallet --> Signer
+Wallet --> CoinSelection
+Wallet --> ChangeOutput
+Wallet --> SpendingPolicy
+OutputDescriptorWallet --> Descriptor
+WatchOnlyWallet --> Descriptor
+
+' Node / validation
+FullNode --> TxValidation
+FullNode --> BlockValidation
+FullNode --> UTXOSet
+FullNode --> Chainstate
+PrunedNode --|> FullNode
+ArchivalNode --|> FullNode
+MiningNode --|> FullNode
+ConsensusRules --> BlockValidation
+ConsensusRules --> TxValidation
+StandardnessRules --> RelayPolicy
+Mempool --> FeeRate
+Mempool --> VirtualBytes
+WeightUnits --> VirtualBytes
+FullNode --> Reorg
+FullNode --> FeeEstimation
+FullNode --> MempoolPolicy
+
+' P2P
+FullNode --> Peer
+Peer --> P2PTransport
+VersionHandshake --> Peer
+PeerDiscovery --> DNSSeeds
+Peer --> AddrMessages
+Peer --> InvMessages
+Peer --> GetDataMessages
+TxRelay --> Transaction
+BlockRelay --> Block
+HeaderRelay --> BlockHeader
+BIP324Transport --> EncryptionSession
+TorI2P --> Peer
+
+' Mining / issuance
+Miner --> MiningTemplate
+MiningTemplate --> BlockAssembler
+BlockAssembler --> Transaction
+BlockAssembler --> CoinbaseTx
+CoinbaseCommitments --> CoinbaseTx
+Subsidy --> CoinbaseTx
+Fees --> CoinbaseTx
+Halving --> Subsidy
+DifficultyEpoch --> DifficultyRetarget
+Target --> BlockHeader
+NonceSearch --> BlockHeader
+ExtraNonce --> CoinbaseTx
+Pool --> Stratum
+Stratum --> Miner
+
+' Timechain transitions
+GenesisBlock --> Block
+BestChain --> ChainTip
+Fork --> ChainTip
+SoftFork --> Activation
+SoftFork --> ConsensusRules
+HardFork --> ConsensusRules
+VersionBits --> Activation
+BuriedDeployment --> Activation
+UASF --> Activation
+
+' BIPs / sub-protocols
+BIP16_P2SH --> P2SH
+BIP32_HD --> HDWallet
+BIP39_Mnemonic --> SeedPhrase
+BIP43_Purpose --> BIP32Path
+BIP44_MultAccount --> Account
+BIP65_CLTV --> CLTV
+BIP68_Sequence --> Sequence
+BIP112_CSV --> CSV
+BIP141_SegWit --> SegWitV0
+BIP143_SegWitDigest --> SegWitV0
+BIP157_158_Neutrino --> BlockFilter
+BIP173_Bech32 --> Bech32
+BIP174_PSBT --> PSBT
+BIP340_Schnorr --> Schnorr
+BIP341_Taproot --> Taproot
+BIP342_Tapscript --> Tapscript
+BIP324_v2Transport --> BIP324Transport
+
+' Higher-level protocols
+PaymentChannel --> Transaction
+LightningNetwork --> PaymentChannel
+CommitmentTx --> Transaction
+HTLC --> Script
+PTLC --> Schnorr
+Watchtower --> LightningNetwork
+DLC --> OracleSignature
+DLC --> Taproot
+Ark --> Transaction
+Fedimint --> ChaumianEcash
+CoinJoin --> Transaction
+PayJoin --> Transaction
+Statechain --> Transaction
+Sidechain --> BlockHeader
+DrivechainConcept --> Sidechain
+CovenantsResearch --> Script
+
+' Data / access
+RPC --> FullNode
+ZMQ --> FullNode
+Indexer --> Block
+Indexer --> Transaction
+Explorer --> Indexer
+ElectrumProtocol --> Indexer
+NeutrinoClient --> BlockFilter
+WalletAPI --> Wallet
+TxIndex --> Indexer
+AddressIndex --> Indexer
+
+' Overlays / application uses
+Timestamping --> OP_RETURN
+ProofOfReserves --> MerkleTree
+ColoredCoins --> Transaction
+OpenAssetsLikeProtocols --> ColoredCoins
+Ordinals --> Transaction
+Inscriptions --> WitnessStack
+Runes --> Transaction
+RGB --> Taproot
+NostrAnchoring --> OP_RETURN
+ExternalRollupAnchors --> Transaction
+MergeMinedOverlay --> CoinbaseCommitments
+KapnetLikeOverlay --> OP_RETURN
+KapnetLikeOverlay --> MerkleTree
+KapnetLikeOverlay --> Transaction
+
+@enduml

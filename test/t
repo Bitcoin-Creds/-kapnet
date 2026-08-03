@@ -1,0 +1,732 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{titlesec}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  columns=fullflexible
+}
+
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+\title{Kapnet Node Utility Profile\\
+DAO Membership, DAO Foundry, Weakwork Wallet, HODL Wallet, and Cognition Router}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+
+This document defines the practical utility surface of a Kapnet node. It treats the node not as a generic protocol endpoint, but as an agency appliance that allows a person, family, firm, federation, or bounded agent system to do five economically and organizationally legible things:
+
+\begin{enumerate}[label=\arabic*.]
+    \item join DAOs,
+    \item make DAOs,
+    \item sell weakwork as a small hasher,
+    \item sell HODL-derived privilege as a base-layer saver,
+    \item distribute cognition across adoptive organizations.
+\end{enumerate}
+
+The purpose of this profile is to compress Kapnet into a concrete node-facing product and operational model. The system should not first be explained as a grand protocol cosmology. It should first be explained as a node that converts spare hashpower, spare patience, and spare cognition into governable and tradable coordination power.
+
+\section{Purpose}
+
+A protocol becomes real when a node running it has clear utility for ordinary and advanced operators. Kapnet node utility should not be stated in abstract terms such as ``decentralized coordination'' alone. It should be stated in direct, user-facing and institution-facing terms.
+
+A Kapnet node should let an operator:
+
+\begin{itemize}
+    \item join organizations,
+    \item create organizations,
+    \item monetize weakwork,
+    \item monetize patient holding,
+    \item route and archive collective cognition.
+\end{itemize}
+
+That is the practical utility surface. Everything else should be arranged around supporting it.
+
+\section{Core Thesis}
+
+A Kapnet node is an \emph{agency appliance}. It should allow an operator to transform three classes of surplus into organizational agency:
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{surplus hashpower} into weakwork and short-horizon privilege,
+    \item \textbf{surplus patience} into ATY / hedlbit-derived holding privilege,
+    \item \textbf{surplus cognition} into distributed organizational action.
+\end{enumerate}
+
+This gives Kapnet a concise economic and institutional identity:
+
+\begin{quote}
+Kapnet turns spare hashpower, spare patience, and spare cognition into tradeable and governable coordination power.
+\end{quote}
+
+\section{Architectural Position}
+
+The utility profile sits above the Kapnet kernel and below application-specific user interfaces.
+
+\subsection{Bitcoin Layer}
+
+Bitcoin provides:
+
+\begin{itemize}
+    \item base blocktime,
+    \item the settlement and anchoring substrate,
+    \item the UTXO universe relevant for HodlRateSet accounting,
+    \item the inherited work substrate relevant for weakwork logic.
+\end{itemize}
+
+\subsection{Kapnet Kernel}
+
+The kernel provides:
+
+\begin{itemize}
+    \item typed signed objects,
+    \item dependencies,
+    \item replay protection,
+    \item bounded state transitions,
+    \item typed state roots,
+    \item anchor references,
+    \item capability and service exchange surfaces.
+\end{itemize}
+
+\subsection{Utility Layer}
+
+The utility layer provides:
+
+\begin{itemize}
+    \item DAO membership,
+    \item DAO foundry behavior,
+    \item weakwork wallet behavior,
+    \item HODL / ATY wallet behavior,
+    \item cognition routing behavior,
+    \item provider-market behavior.
+\end{itemize}
+
+\section{Five Core Node Modes}
+
+A Kapnet node should expose five first-class modes of utility.
+
+\subsection{Membership Appliance}
+
+The node must allow a user or organization to join, follow, and interact within DAOs and related scopes.
+
+This includes:
+
+\begin{itemize}
+    \item discovering DAOs,
+    \item joining or leaving scopes,
+    \item receiving member-addressed submissions,
+    \item following rooms and feeds,
+    \item holding roles and permissions,
+    \item replying, voting, proposing, and attesting,
+    \item inheriting scope-specific rules and archive surfaces.
+\end{itemize}
+
+This is the baseline social and organizational utility of the node.
+
+\subsection{DAO Foundry}
+
+The node must allow a user or group to instantiate and operate a DAO.
+
+This includes:
+
+\begin{itemize}
+    \item defining a new scope,
+    \item binding a ruleset reference,
+    \item selecting providers,
+    \item selecting archive and validation modes,
+    \item selecting dissemination fabrics,
+    \item setting browse defaults,
+    \item choosing treasury and settlement references,
+    \item defining membership and governance surfaces.
+\end{itemize}
+
+This is the institutional utility of the node.
+
+\subsection{Weakwork Wallet}
+
+The node must allow a small hasher or work claimant to expose, track, and monetize weakwork.
+
+This includes:
+
+\begin{itemize}
+    \item generating or submitting weakwork claims,
+    \item tracking active and decaying weakwork,
+    \item routing weakwork into admission or provider markets,
+    \item sponsoring submissions or service requests,
+    \item selling short-horizon work privilege where permitted.
+\end{itemize}
+
+This is the small-producer and near-term privilege utility of the node.
+
+\subsection{HODL / ATY Wallet}
+
+The node must allow a saver or base-layer holder to inspect and route patience-derived privilege.
+
+This includes:
+
+\begin{itemize}
+    \item inspecting HodlRateSet position,
+    \item inspecting bucket-derived rights or claims,
+    \item tracking ATY / HODL-related entitlements,
+    \item exposing holding privilege in DAO or provider contexts,
+    \item leasing or selling those rights where permitted.
+\end{itemize}
+
+This is the saver utility of the node.
+
+\subsection{Cognition Router}
+
+The node must allow any adoptive organization to distribute cognition.
+
+This includes:
+
+\begin{itemize}
+    \item creating tasks,
+    \item assigning tasks to humans or agents,
+    \item routing receipts and validations,
+    \item distributing knowledge across scopes,
+    \item archiving operational memory,
+    \item pricing trust and verification,
+    \item coordinating family, firm, cooperative, federation, or swarm behavior.
+\end{itemize}
+
+This is the highest-level organizational utility of the node.
+
+\section{Three Distinct Privilege Surfaces}
+
+The utility profile is strongest when it recognizes three distinct classes of privilege rather than collapsing everything into one synthetic score.
+
+\subsection{Miner or Weakwork Privilege}
+
+This is short-horizon privilege.
+
+It is characterized by:
+
+\begin{itemize}
+    \item rapid blocktime decay,
+    \item claim and award logic,
+    \item lottery-mediated access,
+    \item near-term admission or routing utility,
+    \item provider-market usability.
+\end{itemize}
+
+The practical statement is:
+
+\begin{quote}
+Having a miner or work privilege is a privilege.
+\end{quote}
+
+\subsection{Saver or HODL Privilege}
+
+This is long-horizon privilege.
+
+It is characterized by:
+
+\begin{itemize}
+    \item patience-weighted emission,
+    \item HODL-derived rights,
+    \item ATY / hedlbit-related accounting,
+    \item long-horizon participation utility,
+    \item potential leasing or collateral utility.
+\end{itemize}
+
+The practical statement is:
+
+\begin{quote}
+Having holding privilege is a privilege.
+\end{quote}
+
+\subsection{Organizational Cognition Privilege}
+
+This is coordination privilege.
+
+It is characterized by:
+
+\begin{itemize}
+    \item role-bound authority,
+    \item task-routing ability,
+    \item validation and attestation power,
+    \item archive and memory stewardship,
+    \item capacity to direct collective action.
+\end{itemize}
+
+The practical statement is:
+
+\begin{quote}
+Having organizational cognition is a privilege.
+\end{quote}
+
+Kapnet is valuable because it can make all three classes composable without collapsing them.
+
+\section{User and Organization Classes}
+
+The node utility profile should map directly to real operator classes.
+
+\subsection{Small Hasher}
+
+A small hasher wants to:
+
+\begin{itemize}
+    \item submit weakwork claims,
+    \item observe awards and decay,
+    \item route or sell weakwork into provider markets,
+    \item sponsor submissions or retrieval,
+    \item participate without requiring large-scale mining dominance.
+\end{itemize}
+
+\subsection{Base-Layer Saver}
+
+A saver wants to:
+
+\begin{itemize}
+    \item inspect HODL-derived privilege,
+    \item expose patience position,
+    \item route that privilege into DAO or provider economics,
+    \item lease or sell such rights where policies permit,
+    \item participate as a long-horizon holder rather than a short-horizon hasher.
+\end{itemize}
+
+\subsection{Member}
+
+A member wants to:
+
+\begin{itemize}
+    \item discover and join DAOs,
+    \item receive messages and submissions,
+    \item scroll feeds,
+    \item reply and vote,
+    \item hold scoped roles,
+    \item follow work queues or governance queues.
+\end{itemize}
+
+\subsection{Founder or Operator}
+
+A founder or operator wants to:
+
+\begin{itemize}
+    \item create a DAO,
+    \item bind a ruleset,
+    \item choose providers,
+    \item set archive and validation defaults,
+    \item manage membership and policy surfaces,
+    \item control public and private dissemination choices.
+\end{itemize}
+
+\subsection{Firm, Family, Cooperative, or Federation}
+
+An adoptive organization wants to:
+
+\begin{itemize}
+    \item distribute cognition,
+    \item define internal roles,
+    \item route tasks,
+    \item maintain a scoped archive,
+    \item govern itself,
+    \item bridge private and public scopes,
+    \item use provider markets and privilege lanes.
+\end{itemize}
+
+\subsection{Service Provider}
+
+A service provider wants to:
+
+\begin{itemize}
+    \item sell relay,
+    \item sell validation,
+    \item sell archive,
+    \item sell indexing,
+    \item intermediate weakwork liquidity,
+    \item intermediate HODL-derived liquidity,
+    \item advertise service capability and pricing.
+\end{itemize}
+
+\section{Node Modules}
+
+A concrete Kapnet node should surface the above utility through a small number of recognizable modules.
+
+\subsection{Module 1: DAO Browser and Membership Surface}
+
+This module should support:
+
+\begin{itemize}
+    \item browsing DAO registry entries,
+    \item viewing scope metadata and rules,
+    \item joining or leaving scopes,
+    \item receiving member-addressed submissions,
+    \item browsing room and DAO feeds,
+    \item viewing role assignments and membership state.
+\end{itemize}
+
+\subsection{Module 2: DAO Foundry}
+
+This module should support:
+
+\begin{itemize}
+    \item creating a new DAO,
+    \item assigning a namespace or scope ID,
+    \item choosing default providers,
+    \item selecting validation and archive modes,
+    \item setting browse defaults,
+    \item selecting native or Nostr-linked fabrics,
+    \item creating treasury and settlement references.
+\end{itemize}
+
+\subsection{Module 3: Weakwork Wallet}
+
+This module should support:
+
+\begin{itemize}
+    \item viewing active weakwork claims,
+    \item viewing awards and decay,
+    \item submitting new claims,
+    \item seeing market offers or sponsorship routes,
+    \item routing weakwork toward relay, retrieval, or participation surfaces.
+\end{itemize}
+
+\subsection{Module 4: HODL / ATY Wallet}
+
+This module should support:
+
+\begin{itemize}
+    \item inspecting bucket or patience position,
+    \item viewing claimable or derived rights,
+    \item viewing possible DAO or provider uses of those rights,
+    \item offering liquidity or leasing where permitted,
+    \item tracking cycle accounting surfaces.
+\end{itemize}
+
+\subsection{Module 5: Cognition Router}
+
+This module should support:
+
+\begin{itemize}
+    \item creating work items,
+    \item assigning bounded tasks to humans or agents,
+    \item tracking receipts,
+    \item requesting validation,
+    \item tracking organizational work queues,
+    \item preserving archive and memory state,
+    \item routing cognition inside and across organizations.
+\end{itemize}
+
+\section{Node Utility as Economic Conversion}
+
+The utility profile becomes especially clear when stated as a conversion machine.
+
+\subsection{Hashpower to Coordination}
+
+Spare hashpower is converted into:
+
+\begin{itemize}
+    \item weakwork claims,
+    \item short-horizon priority,
+    \item admission or routing rights,
+    \item saleable provider-side utility.
+\end{itemize}
+
+\subsection{Patience to Coordination}
+
+Spare patience is converted into:
+
+\begin{itemize}
+    \item HODL-derived privilege,
+    \item long-horizon participation rights,
+    \item saver-side market utility,
+    \item input to DAO and provider relationships.
+\end{itemize}
+
+\subsection{Cognition to Coordination}
+
+Spare cognition is converted into:
+
+\begin{itemize}
+    \item bounded tasks,
+    \item assigned responsibility,
+    \item receipts and validation,
+    \item scoped organizational memory,
+    \item durable institutional agency.
+\end{itemize}
+
+\section{Institutional Modes}
+
+Kapnet should support multiple real-world institutional forms without redesigning the kernel for each one.
+
+\subsection{Family Mode}
+
+A family can use the node to:
+
+\begin{itemize}
+    \item maintain shared memory,
+    \item route household or long-horizon tasks,
+    \item keep scoped archives,
+    \item assign trusted roles,
+    \item coordinate small treasury decisions.
+\end{itemize}
+
+\subsection{Firm Mode}
+
+A firm can use the node to:
+
+\begin{itemize}
+    \item distribute cognition across workers and agents,
+    \item buy or sell validation,
+    \item integrate weakwork or HODL-derived privilege into costs or access,
+    \item maintain durable process memory,
+    \item route machine work and receipts.
+\end{itemize}
+
+\subsection{Cooperative Mode}
+
+A cooperative can use the node to:
+
+\begin{itemize}
+    \item define membership and roles,
+    \item balance contribution and patience-derived rights,
+    \item govern internal policy,
+    \item allocate validation and archive budgets,
+    \item preserve decisions and receipts.
+\end{itemize}
+
+\subsection{Federation Mode}
+
+A federation can use the node to:
+
+\begin{itemize}
+    \item coordinate among multiple DAOs,
+    \item shard governance and archival policy,
+    \item route cognition between units,
+    \item maintain common service providers,
+    \item support both public and private fabrics.
+\end{itemize}
+
+\section{Service Provider Opportunity Surfaces}
+
+The node utility profile implies concrete service-market surfaces.
+
+\subsection{Membership and DAO Services}
+
+Providers may offer:
+
+\begin{itemize}
+    \item hosted membership sync,
+    \item DAO creation assistance,
+    \item policy and feed infrastructure,
+    \item addressable submission routing.
+\end{itemize}
+
+\subsection{Weakwork Services}
+
+Providers may offer:
+
+\begin{itemize}
+    \item claim handling,
+    \item sponsorship,
+    \item weakwork routing,
+    \item liquidity and pricing,
+    \item work privilege aggregation.
+\end{itemize}
+
+\subsection{HODL / ATY Services}
+
+Providers may offer:
+
+\begin{itemize}
+    \item patience-state visibility,
+    \item bucket accounting support,
+    \item claims and redemption infrastructure,
+    \item leasing or rights intermediation.
+\end{itemize}
+
+\subsection{Cognition Distribution Services}
+
+Providers may offer:
+
+\begin{itemize}
+    \item validation,
+    \item archive,
+    \item indexing,
+    \item task-routing and work-queue infrastructure,
+    \item bounded agent execution support,
+    \item machine-work receipts and settlement linkage.
+\end{itemize}
+
+\section{Node Capability Implications}
+
+If this utility profile is correct, then node capability descriptors must expose more than generic protocol support.
+
+A node or provider should be able to advertise whether it supports:
+
+\begin{itemize}
+    \item DAO registry and membership,
+    \item DAO creation and governance support,
+    \item weakwork claim and routing services,
+    \item HODL / ATY accounting and exposure services,
+    \item cognition routing and task coordination,
+    \item archive and validation,
+    \item public or private fabrics,
+    \item Nostr-aware or Nostr-bridged operation,
+    \item market intermediation between privilege surfaces.
+\end{itemize}
+
+This is the direct bridge from the protocol layer to the product layer.
+
+\section{Runtime Expectations}
+
+A node implementing this profile should make the following runtime flows natural.
+
+\subsection{Join DAO Flow}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Discover DAO scope.
+    \item Fetch rules and provider surfaces.
+    \item Join as a member or role-holder.
+    \item Begin receiving member-addressed and feed content.
+    \item Participate in governance or work routing.
+\end{enumerate}
+
+\subsection{Make DAO Flow}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Create new scope.
+    \item Bind rules, validation defaults, and archive defaults.
+    \item Select fabrics and providers.
+    \item Publish capability and policy surfaces.
+    \item Begin accepting members and routing cognition.
+\end{enumerate}
+
+\subsection{Sell Weakwork Flow}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Submit or expose weakwork claim.
+    \item Observe award and decay state.
+    \item Route awarded weakwork into markets.
+    \item Exchange for access, sponsorship, or payment.
+\end{enumerate}
+
+\subsection{Sell HODL-Derived Privilege Flow}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Inspect HODL-derived privilege.
+    \item Offer exposure or leasing under relevant policy.
+    \item Bind rights to DAO or provider surfaces.
+    \item Receive compensation or reciprocal access.
+\end{enumerate}
+
+\subsection{Distribute Cognition Flow}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Define tasks or proposals.
+    \item Route to bounded humans or agents.
+    \item Receive receipts.
+    \item Request validation or risk coverage.
+    \item Archive decisions and outputs.
+\end{enumerate}
+
+\section{Recommended Implementation Order}
+
+The utility profile suggests a pragmatic implementation order.
+
+\subsection{Priority 1: DAO Membership and Foundry}
+
+The first node utility should let users:
+
+\begin{itemize}
+    \item discover and join DAOs,
+    \item create and configure DAOs,
+    \item receive member-addressed submissions,
+    \item browse scoped feeds.
+\end{itemize}
+
+This gives immediate organizational utility.
+
+\subsection{Priority 2: Weakwork Wallet}
+
+The next utility should let small hashers:
+
+\begin{itemize}
+    \item submit weakwork claims,
+    \item track decay,
+    \item route work privilege into markets.
+\end{itemize}
+
+This gives immediate producer-side economic utility.
+
+\subsection{Priority 3: HODL / ATY Wallet}
+
+The next utility should let savers:
+
+\begin{itemize}
+    \item inspect HODL-derived privilege,
+    \item view and route patience-derived rights,
+    \item participate in long-horizon DAO and provider economics.
+\end{itemize}
+
+This gives immediate saver-side economic utility.
+
+\subsection{Priority 4: Cognition Router}
+
+The next utility should let organizations:
+
+\begin{itemize}
+    \item distribute tasks,
+    \item coordinate humans and agents,
+    \item preserve memory,
+    \item attach validation and settlement surfaces.
+\end{itemize}
+
+This gives the broader adoptive-organization utility.
+
+\section{Strongest Concise Formulation}
+
+The full utility story can be compressed into one line:
+
+\begin{quote}
+A Kapnet node should let anyone join and found DAOs, monetize spare hashpower as weakwork, monetize patient saving as HODL-derived privilege, and distribute cognition across families, firms, federations, and agent systems.
+\end{quote}
+
+A slightly more compressed version is:
+
+\begin{quote}
+Kapnet node utility is institutional membership, institutional creation, hashpower monetization, patience monetization, and cognition distribution.
+\end{quote}
+
+\section{Conclusion}
+
+This utility profile gives Kapnet a concrete node-facing identity. The node is not merely a consensus participant or a relay endpoint. It is a machine that lets operators convert three kinds of surplus into agency:
+
+\begin{itemize}
+    \item hashpower into weakwork,
+    \item patience into HODL-derived privilege,
+    \item cognition into coordinated organizational action.
+\end{itemize}
+
+That is the correct practical framing for the system. It binds the protocol to real operator incentives, real organizational forms, and real service markets. It also gives a clear implementation horizon: the node should first be able to join and make DAOs, expose weakwork and HODL utility, and route cognition for adoptive organizations. If those things are real, the rest of the system has a living center.
+
+\end{document}
